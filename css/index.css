@@ -1,13 +1,26 @@
 @font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: NanumSquare, 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
-	color: #333;
+	color: #47494D;
 }
 body {
-	background: url(/images/bg.png) #001442 fixed;
-	background-size: 250px auto;
+	background-color: #E5E5E5;
+}
+.sr-only {
+	position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 .all {
 	position: relative;
@@ -37,28 +50,110 @@ a {
 }
 .section {
 	min-height: 30vh;
-	margin-bottom: 15%;
-	padding: 20px;
+	margin-bottom: 2.5em;
+	padding: 40px;
 	line-height: 1.4;
-	background: rgba(255,255,255,0.94);
+	background: #FFFFFF;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
 }
 .section-title {
-	margin-bottom: 30px;
-	font-size: 2rem;
-	font-weight: 200;
+	font-size: 2.25rem;
+	font-weight: 700;
+	color: #2E6FF2;
+	text-align: center;
+	margin-bottom: 0.9em;
 }
-.section-content {
-	
-}
-.session-list {
-	
+.section-title span {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #47494D;
+	margin-top: 10px;
 }
 .session-item {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
-.session-item:first-child {
-	margin-top: 50px;
+.session-item table {
+	width: 100%;
+	color: #121314;
 }
+.session-item thead {
+	display: block;
+	background: #F2F2F2;
+	border-radius: 10px;
+	font-size: 0.875rem;
+	height: 2.57em;
+}
+.session-item thead tr {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.session-item thead th {
+	display: block;
+	height: 100%;
+	padding-top: 0.78em;
+	box-sizing: border-box;
+}
+
+.session-item thead th:first-child {
+	width: 85%;
+	border-right: 1px solid #FFF;
+}
+
+.session-item thead th:last-child {
+	width: 15%;
+	text-align: center;
+} 
+
+.session-item tbody tr {
+	display: flex;
+	border-bottom: 1px solid #D9DBE0;
+}
+
+.session-item tbody img {
+	width: 80px;
+	height: 80px;
+	border-radius: 20px;
+	margin-right: 14px;
+}
+
+.session-item tbody td {
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.session-item tbody td:first-child {
+	display: flex;
+	width: 85%;
+	padding: 16px 10px;
+	font-weight: 700;
+	border-right: 1px solid #D9DBE0;
+}
+
+.session-item tbody td:last-child {
+	padding-top: 3.06rem;
+	width: 15%;
+	text-align: center;
+} 
+
+.session-title {
+	display: block;
+	font-size: 1.125rem;
+	line-height: 1.4;
+	word-break: break-all;;
+	margin-bottom: 8px;
+}
+
+.profile-name {
+	font-size: 0.875rem;
+	color: #8D9299;
+}
+
 .session-item-con {
 	display: flex;
 	align-items: flex-start;
@@ -68,12 +163,6 @@ a {
 }
 .session-active .session-item-con {
 	display: block;
-}
-.session-title {
-	font-size: 1rem;
-	font-weight: 900;
-	line-height: 1.4;
-	word-break: keep-all;
 }
 .session-active .session-title {
 	font-size: 1.2rem;
@@ -157,14 +246,17 @@ a {
 	padding-bottom: 3px;
 	font-size: 1.2em;
 	font-style: italic;
-	color: #0757a1;
-	border-bottom: 1px solid #0757a1;
+	font-weight: 700;
+	color: #5483EE;
+	border-bottom: 1px solid #5483EE;
 }
 .head-message {
 	margin-bottom: 1em;
-	font-size: 1.6rem;
-	font-family: CookieRunOTF-Bold;
+	font-size: 1.125rem;
 	line-height: 1.2;
+	font-weight: 700;
+	text-align: center;
+	margin: 1.333em 0 2.222em;
 }
 .head-message small {
 	display: block;
@@ -172,41 +264,43 @@ a {
 	font-size: 0.8rem;
 	color: #aaa;
 }
-.intro-message .para {
-	margin: 2em 0;
-	/* font-size: 1.1rem;
-	font-family: CookieRunOTF-Bold;
-	color: #0757a1; */
-	font-style: italic;
+.intro-message {
+	margin: 2.5em 0 1.875em;
 }
 .view-detail {
 	padding: 5px;
 	color: #fff;
-	background: #9ccf00;
+	background: #5483EE;
 }
 .apply-link {
 	display: block;
-	margin-top: 30px;
-	padding: 10px;
-	font-size: 1.5rem;
-	color: #fff;
+	margin: 30px 0;
+	padding: 14px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #FFF;
 	text-align: center;
 	text-decoration: none;
-	background: #eb9601;
+	background: #2E6FF2;
+	border-radius: 10px;
 }
-.conf-summary li {
-	display: flex;
-	align-items: flex-start;
-	margin: 20px 0;
+
+.conf-summary {
+	display: grid;
+	grid-template-columns: 2.75rem auto;
+	gap: 1rem 2.125rem;
+	font-weight: 700;
 }
-.summary-item:nth-child(1) {
-	flex-shrink: 0;
-	width: 25%;
-	font-weight: bold;
+
+.conf-summary dt {
+	color: #2E6FF2;
+	word-spacing: 0.6rem;
 }
-.summary-item:nth-child(2) {
-	flex: 1;
+
+.conf-summary dd {
+	color: #121314;
 }
+
 .twoyearsago {
 	margin-bottom: 30px;
 }
@@ -216,9 +310,43 @@ a {
 .twoyearsago figcaption {
 	font-size: 12px;
 }
+/* intro */
+.intro {
+	padding: 50px 80px 40px;
+}
+
+.intro h2 img {
+	width: 100%;
+}
+
+.management-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	width: 385px;
+	margin: 0 auto;
+	gap: 30px;
+}
+
+.management-list figure {
+	font-size: 0;
+}
+
+.management {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 50px;
+}
+
+.management .session-item {
+	margin: 0;
+}
+
+.management .profile-photo {
+	width: 100%;
+}
 
 @media (min-width: 769px) {
-	html {
+	/* html {
 		font-size: 16px;
 	}
 	body {
@@ -226,7 +354,7 @@ a {
 	}
 	.section {
 		margin-bottom: 100px;
-		padding: 50px;
+		padding: 30px 50px;
 		background: rgba(255,255,255,0.96);
 	}
 	.head-message {
@@ -234,8 +362,8 @@ a {
 	}
 	.head-message small {
 		font-size: 1rem;
-	}
-	.session-item {
+	} */
+	/* .session-item {
 		margin-bottom: 100px;
 	}
 	.session-active .session-item-con {
@@ -272,27 +400,13 @@ a {
 	}
 	.apply-link {
 		margin-top: 50px;
-	}
-	/* .intro-message {
-		display: flex;
-	}
-	.twoyearsago {
-		order: 1;
-		flex-shrink: 0;
-		width: 300px;
-		margin-right: 30px;
-	}
-	.intro-message .para {
-		order: 2;
-		flex: 1;
-		margin-top: -4px;
 	} */
 }
 
 @media (max-width: 320px) {
-	.section {
+	/* .section {
 		padding: 15px;
-	}
+	} */
 }
 
 
