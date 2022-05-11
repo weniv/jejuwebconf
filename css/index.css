@@ -142,11 +142,11 @@ a {
 .session-item:last-child {
 	margin-bottom: 30px;
 }
-.session-item table {
+.session-table {
 	width: 100%;
 	color: #121314;
 }
-.session-item thead {
+.session-table thead {
 	display: block;
 	background: #F2F2F2;
 	border-radius: 10px;
@@ -154,58 +154,58 @@ a {
 	height: 2.57em;
 	font-weight: 700;
 }
-.session-item thead tr {
+.session-table thead tr {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	width: 100%;
 	height: 100%;
 }
-.session-item thead th {
+.session-table th {
 	display: block;
 	height: 100%;
 	padding-top: 0.78em;
 	box-sizing: border-box;
 }
 
-.session-item thead th:first-child {
+.session-table th:first-child {
 	width: 85%;
 	border-right: 1px solid #FFF;
 }
 
-.session-item thead th:last-child {
+.session-table th:last-child {
 	width: 15%;
 	text-align: center;
 } 
 
-.session-item tbody tr {
+.session-table tbody tr {
 	display: flex;
 	border-bottom: 1px solid #D9DBE0;
 }
 
-.session-item tbody img {
+.session-table tbody img {
 	width: 5em;
 	height: 5em;
 	border-radius: 1.25rem;
 }
 
-.session-item tbody img.conference {
+.session-table tbody img.conference {
 	border-radius: 0;
 }
 
-.session-item td {
+.session-table td {
 	display: flex;
 	box-sizing: border-box;
 }
 
-.session-item td:first-child {
+.session-table td:first-child {
 	width: 85%;
 	padding: 16px 10px;
 	font-weight: 700;
 	border-right: 1px solid #D9DBE0;
 }
 
-.session-item tbody td:last-child {
+.session-table td:last-child {
 	flex-direction: column;
 	justify-content: center;
 	width: 15%;
@@ -300,16 +300,6 @@ a {
 	margin-left: 18px;
 }
 
-.notice {
-	min-height: 100%;
-	margin-bottom: 0;
-	font-size: 0.875rem;
-}
-
-.notice .apply-link {
-	margin-bottom: 0;
-}
-
 .notice-list .notice-item {
 	display: flex;
 	align-items: flex-start;
@@ -343,6 +333,71 @@ a {
 	margin-top: 10px;
 }
 
+.recruit {
+	min-height: 100%;
+	margin-bottom: 0;
+}
+
+.recruit button {
+	width: 100%;
+	margin: 20px 0 0;
+}
+
+.recruit .show-table.hide {
+	display: none;
+}
+
+.recruit .recruit-table-con {
+	display: none;
+}
+
+.recruit .recruit-table-con.active {
+	display: block;
+}
+
+.recruit .session-table {
+	margin-top: 20px;
+}
+
+.recruit th:first-child {
+	width: 75%;
+	border-right: 1px solid #FFF;
+}
+
+.recruit th:last-child {
+	width: 25%;
+	text-align: center;
+} 
+
+.recruit td:first-child {
+	width: 75%;
+}
+
+.recruit td:last-child {
+	align-items: center;
+	width: 25%;
+}
+
+.recruit tbody img {
+	border-radius: 0.937rem;
+	border: 2px solid #E5E5E5;
+}
+
+.recruit .session-info a {
+	font-size: 0.875rem;
+}
+
+.recruit .para {
+	margin-bottom: 10px;
+    color: #47494D;
+    font-size: 0.875rem;
+}
+
+.recruit .qr img {
+	border-radius: 0;
+}
+
+
 .scroll-top {
     position: fixed;
     bottom: 20px;
@@ -375,6 +430,38 @@ a {
 
 .scroll-top:hover .scroll-top-img {
     fill: #767676;
+}
+
+.sticker-section {
+	display: none;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.sticker-section.active {
+	display: flex;
+}
+
+.sticker-section .wrap {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.sticker-section .close-modal {
+	width: 100%;
+	height: 50px;
+	background-color: #FFF;
+	color: #121314;
+	font-weight: 700;
+	cursor: pointer;
 }
 
 @media (max-width: 769px) {
