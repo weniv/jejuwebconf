@@ -34,10 +34,6 @@ body {
 .all.before-start {
 	display: none;
 }
-.para {
-	margin: 1em 0;
-	line-height: 1.6;
-}
 .canvas {
 	position: fixed;
 	left: 0;
@@ -57,6 +53,7 @@ a {
 	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 	border-radius: 20px;
 }
+
 .section-title {
 	font-size: 2.25rem;
 	font-weight: 700;
@@ -71,8 +68,79 @@ a {
 	color: #47494D;
 	margin-top: 10px;
 }
+.head-message {
+	margin-bottom: 1em;
+	font-size: 1.125rem;
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: center;
+	margin: 1.333em 0 2.222em;
+}
+.head-message small {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.8rem;
+	color: #aaa;
+}
+.para {
+	line-height: 1.375rem;
+}
+.intro-message {
+	margin: 2.5em 0 1.875em;
+}
+
+/* intro */
+.intro {
+	padding: 50px 80px 40px;
+}
+
+.intro h2 img {
+	width: 100%;
+}
+
+.apply-link {
+	display: block;
+	margin: 30px 0;
+	padding: 14px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	background: #2E6FF2;
+	border-radius: 10px;
+}
+
+.conf-summary {
+	display: grid;
+	grid-template-columns: 2.75rem auto;
+	gap: 1rem 2.125rem;
+	font-weight: 700;
+}
+
+.conf-summary dt {
+	color: #2E6FF2;
+	word-spacing: 0.6rem;
+}
+
+.conf-summary dd {
+	color: #121314;
+}
+
+
+.management-list {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+/* section-item */
 .session-item {
 	margin-bottom: 20px;
+}
+.session-item:last-child {
+	margin-bottom: 30px;
 }
 .session-item table {
 	width: 100%;
@@ -84,6 +152,7 @@ a {
 	border-radius: 10px;
 	font-size: 0.875rem;
 	height: 2.57em;
+	font-weight: 700;
 }
 .session-item thead tr {
 	display: flex;
@@ -115,20 +184,21 @@ a {
 }
 
 .session-item tbody img {
-	width: 80px;
-	height: 80px;
-	border-radius: 20px;
-	margin-right: 14px;
+	width: 5em;
+	height: 5em;
+	border-radius: 1.25rem;
 }
 
-.session-item tbody td {
-	display: block;
-	height: 100%;
+.session-item tbody img.conference {
+	border-radius: 0;
+}
+
+.session-item td {
+	display: flex;
 	box-sizing: border-box;
 }
 
-.session-item tbody td:first-child {
-	display: flex;
+.session-item td:first-child {
 	width: 85%;
 	padding: 16px 10px;
 	font-weight: 700;
@@ -136,9 +206,11 @@ a {
 }
 
 .session-item tbody td:last-child {
-	padding-top: 3.06rem;
+	flex-direction: column;
+	justify-content: center;
 	width: 15%;
 	text-align: center;
+	padding: 0 0.625em;
 } 
 
 .session-title {
@@ -154,259 +226,176 @@ a {
 	color: #8D9299;
 }
 
-.session-item-con {
+.notice-message {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
+	padding: 12px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	color: #121314;
+	font-weight: 400;
 }
-.session-item:last-child {
+
+.notice-message::before {
+	content: "";
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 10px;
+	background: #FFF url(../images/icon-notice.svg) no-repeat center / 20px 20px;
+	margin-right: 13px;
+}
+
+.team .session-item {
+	display: flex;
+}
+
+.team .session-item:last-child {
 	margin-bottom: 0;
 }
-.session-active .session-item-con {
-	display: block;
-}
-.session-active .session-title {
-	font-size: 1.2rem;
-}
-.profile-photo {
+
+.team .profile-photo {
 	flex-shrink: 0;
 	width: 30%;
 	margin: 0;
 	font-size: 0;
 }
-.session-active .profile-photo {
-	width: 70%;
-	margin: 30px auto;
+
+.team .profile-photo img {
+	width: 100%;
+	border-radius: 20px;
 }
-.session-info {
-	margin-left: 18px;
-}
-.session-active .session-info {
-	margin-left: 0;
-}
-.session-active .session-desc {
-	display: block;
-}
-.profile {
-	font-size: 0.9em;
-}
-.session-active .profile {
-	margin-top: 30px;
-}
-.profile-name {
-	margin: 5px 0 10px;
-	font-size: 0.9rem;
-}
+
 .team .profile-name {
-	margin: 0;
-	font-size: 1rem;
-	font-weight: 900;
-}
-.session-active .profile-name {
-	font-size: 1rem;
-	font-weight: 900;
-}
-.profile-name small {
-	display: none;
-	margin-top: 5px;
-	color: #666;
-}
-.team .profile-name small,
-.session-active .profile-name small {
 	display: block;
-}
-.profile-desc,
-.profile-desc a {
-	color: #666;
-}
-.profile-link-list {
-	line-height: 1.6;
-}
-.profile-desc,
-.profile-link-list,
-.session-desc {
-	display: none;
-}
-.team .profile-desc,
-.session-active .profile-desc,
-.session-active .session-desc {
-	display: block;
-}
-.team .profile-link-list,
-.session-active .profile-link-list {
-	display: inline-block;
-}
-.profile-link {
-	color: #0757a1;
-}
-.team .profile-link-list {
-	margin: 10px 0;
-}
-.session-time {
-	margin-bottom: 20px;
-	padding-bottom: 3px;
-	font-size: 1.2em;
-	font-style: italic;
-	font-weight: 700;
-	color: #5483EE;
-	border-bottom: 1px solid #5483EE;
-}
-.head-message {
-	margin-bottom: 1em;
 	font-size: 1.125rem;
-	line-height: 1.2;
-	font-weight: 700;
-	text-align: center;
-	margin: 1.333em 0 2.222em;
-}
-.head-message small {
-	display: block;
-	margin-top: 10px;
-	font-size: 0.8rem;
-	color: #aaa;
-}
-.intro-message {
-	margin: 2.5em 0 1.875em;
-}
-.view-detail {
-	padding: 5px;
-	color: #fff;
-	background: #5483EE;
-}
-.apply-link {
-	display: block;
-	margin: 30px 0;
-	padding: 14px;
-	font-size: 1rem;
-	font-weight: 700;
-	color: #FFF;
-	text-align: center;
-	text-decoration: none;
-	background: #2E6FF2;
-	border-radius: 10px;
-}
-
-.conf-summary {
-	display: grid;
-	grid-template-columns: 2.75rem auto;
-	gap: 1rem 2.125rem;
-	font-weight: 700;
-}
-
-.conf-summary dt {
-	color: #2E6FF2;
-	word-spacing: 0.6rem;
-}
-
-.conf-summary dd {
+    line-height: 1.4;
+    margin-bottom: 8px;
+	font-weight: 900;
 	color: #121314;
 }
 
-.twoyearsago {
-	margin-bottom: 30px;
-}
-.twoyearsago img {
-	width: 100%;
-}
-.twoyearsago figcaption {
-	font-size: 12px;
-}
-/* intro */
-.intro {
-	padding: 50px 80px 40px;
+.team .profile-name small {
+	font-size: 0.875rem;
+	color: #8D9299;
+	margin-left: 5px;
 }
 
-.intro h2 img {
-	width: 100%;
+.team .profile-role {
+	font-size: 0.875rem;
 }
 
-.management-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	width: 385px;
-	margin: 0 auto;
-	gap: 30px;
+.team .profile-desc {
+	margin-top: 10px;
+	color: #47494D;
+	font-size: 0.875rem;
 }
 
-.management-list figure {
-	font-size: 0;
+.team .profile-desc a {
+	color: #666;
+	font-weight: 600;
 }
 
-.management {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	gap: 50px;
+.session-info {
+	margin-left: 18px;
 }
 
-.management .session-item {
-	margin: 0;
+.notice {
+	min-height: 100%;
+	margin-bottom: 0;
+	font-size: 0.875rem;
 }
 
-.management .profile-photo {
-	width: 100%;
+.notice .apply-link {
+	margin-bottom: 0;
 }
 
-@media (min-width: 769px) {
-	/* html {
-		font-size: 16px;
-	}
-	body {
-		background-size: 500px auto;
+.notice-list .notice-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.notice-list .notice-item:last-child {
+	margin-bottom: 0;
+}
+
+.notice-list .notice-item::before {
+	content: "";
+	display: inline-block;
+	width: 1.375rem;
+	height: 1.375rem;
+	background: url(../images/icon-notice.svg) no-repeat center / 20px 20px;
+	margin-right: 5px;
+}
+
+.notice-list .notice-item .para {
+	width: 90%;
+}
+
+.notice-list .notice-mail small {
+	font-size: 0.875rem;
+    color: #8D9299;
+	font-weight: 700;
+}
+
+.notice-list .notice-qr a {
+	margin-top: 10px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: bottom .3s;
+    display: none;
+}
+
+.scroll-top.btn-active {
+    display: block;
+}
+
+.scroll-top button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.scroll-top .scroll-top-img {
+    width: 40px;
+    height: 40px;
+    fill: #C4C4C4;
+}
+
+.scroll-top:hover .scroll-top-img {
+    fill: #767676;
+}
+
+@media (max-width: 769px) {
+	html {
+		font-size: 14px;
 	}
 	.section {
-		margin-bottom: 100px;
-		padding: 30px 50px;
-		background: rgba(255,255,255,0.96);
+		padding: 20px;
 	}
-	.head-message {
-		font-size: 3rem;
-	}
-	.head-message small {
+	.session-title {
 		font-size: 1rem;
-	} */
-	/* .session-item {
-		margin-bottom: 100px;
 	}
-	.session-active .session-item-con {
-		display: flex;
-		align-items: flex-start;
+	.session-item tbody {
+		font-size: 0.875rem;
 	}
-	.section-title {
-		font-size: 3rem;
-		margin-bottom: 50px;
-	}
-	.profile-photo {
-		width: 18%;
-	}
-	.session-active .profile-photo {
-		flex-shrink: 0;
-		width: 18%;
-		margin: 0;
-		font-size: 0;
-	}
-	.session-title,
-	.session-active .session-title {
-		font-size: 1.5rem;
-	}
-	.session-info {
-		flex: 1;
-		margin-left: 45px;
-	}
-	.session-active .session-info {
-		margin-left: 45px;
-	}
-	.session-time {
-		margin-bottom: 40px;
-		font-size: 1.5rem;
-	}
-	.apply-link {
-		margin-top: 50px;
-	} */
 }
 
 @media (max-width: 320px) {
-	/* .section {
+	.section {
 		padding: 15px;
-	} */
+	}
 }
 
 
