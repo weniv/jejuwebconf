@@ -27,6 +27,7 @@ body {
 	z-index: 10;
 	width: 80%;
 	max-width: 800px;
+	min-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 70px;
@@ -189,8 +190,8 @@ a {
 	border-radius: 1.25rem;
 }
 
-.session-table tbody img.conference {
-	border-radius: 0;
+.session-table tbody img.default {
+	border: 1px solid #2E6FF2;
 }
 
 .session-table td {
@@ -453,6 +454,12 @@ a {
 .sticker-section .wrap {
 	border-radius: 10px;
 	overflow: hidden;
+	margin: 0 50px;
+}
+
+.sticker-section .info-img {
+	max-width: 500px;
+	min-width: 200px;
 }
 
 .sticker-section .close-modal {
@@ -476,6 +483,11 @@ a {
 	}
 	.session-item tbody {
 		font-size: 0.875rem;
+	}
+
+	.recruit tbody td img {
+		width: 3em;
+		height: 3em;
 	}
 }
 
