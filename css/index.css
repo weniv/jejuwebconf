@@ -247,6 +247,10 @@ a {
 	margin-right: 13px;
 }
 
+.notice-message p {
+	width: 90%;
+}
+
 .team .session-item {
 	display: flex;
 }
