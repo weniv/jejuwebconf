@@ -1,0 +1,318 @@
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+html {
+	font-size: 14px;
+	font-family: NanumSquare, 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+	color: #333;
+}
+body {
+	background: url(/images/bg.png) #001442 fixed;
+	background-size: 250px auto;
+}
+.all {
+	position: relative;
+	z-index: 10;
+	width: 80%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 70px;
+}
+.all.before-start {
+	display: none;
+}
+.para {
+	margin: 1em 0;
+	line-height: 1.6;
+}
+.canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+a {
+	color: #333;
+}
+.section {
+	min-height: 30vh;
+	margin-bottom: 15%;
+	padding: 20px;
+	line-height: 1.4;
+	background: rgba(255,255,255,0.94);
+}
+.section-title {
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: 200;
+}
+.section-content {
+	
+}
+.session-list {
+	
+}
+.session-item {
+	margin-bottom: 50px;
+}
+.session-item:first-child {
+	margin-top: 50px;
+}
+.session-item-con {
+	display: flex;
+	align-items: flex-start;
+}
+.session-item:last-child {
+	margin-bottom: 0;
+}
+.session-active .session-item-con {
+	display: block;
+}
+.session-title {
+	font-size: 1rem;
+	font-weight: 900;
+	line-height: 1.4;
+	word-break: keep-all;
+}
+.session-active .session-title {
+	font-size: 1.2rem;
+}
+.profile-photo {
+	flex-shrink: 0;
+	width: 30%;
+	margin: 0;
+	font-size: 0;
+}
+.session-active .profile-photo {
+	width: 70%;
+	margin: 30px auto;
+}
+.session-info {
+	margin-left: 18px;
+}
+.session-active .session-info {
+	margin-left: 0;
+}
+.session-active .session-desc {
+	display: block;
+}
+.profile {
+	font-size: 0.9em;
+}
+.session-active .profile {
+	margin-top: 30px;
+}
+.profile-name {
+	margin: 5px 0 10px;
+	font-size: 0.9rem;
+}
+.team .profile-name {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 900;
+}
+.session-active .profile-name {
+	font-size: 1rem;
+	font-weight: 900;
+}
+.profile-name small {
+	display: none;
+	margin-top: 5px;
+	color: #666;
+}
+.team .profile-name small,
+.session-active .profile-name small {
+	display: block;
+}
+.profile-desc,
+.profile-desc a {
+	color: #666;
+}
+.profile-link-list {
+	line-height: 1.6;
+}
+.profile-desc,
+.profile-link-list,
+.session-desc {
+	display: none;
+}
+.team .profile-desc,
+.session-active .profile-desc,
+.session-active .session-desc {
+	display: block;
+}
+.team .profile-link-list,
+.session-active .profile-link-list {
+	display: inline-block;
+}
+.profile-link {
+	color: #0757a1;
+}
+.team .profile-link-list {
+	margin: 10px 0;
+}
+.session-time {
+	margin-bottom: 20px;
+	padding-bottom: 3px;
+	font-size: 1.2em;
+	font-style: italic;
+	color: #0757a1;
+	border-bottom: 1px solid #0757a1;
+}
+.head-message {
+	margin-bottom: 1em;
+	font-size: 1.6rem;
+	font-family: CookieRunOTF-Bold;
+	line-height: 1.2;
+}
+.head-message small {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.8rem;
+	color: #aaa;
+}
+.intro-message .para {
+	margin: 2em 0;
+	/* font-size: 1.1rem;
+	font-family: CookieRunOTF-Bold;
+	color: #0757a1; */
+	font-style: italic;
+}
+.view-detail {
+	padding: 5px;
+	color: #fff;
+	background: #9ccf00;
+}
+.apply-link {
+	display: block;
+	margin-top: 30px;
+	padding: 10px;
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #eb9601;
+}
+.conf-summary li {
+	display: flex;
+	align-items: flex-start;
+	margin: 20px 0;
+}
+.summary-item:nth-child(1) {
+	flex-shrink: 0;
+	width: 25%;
+	font-weight: bold;
+}
+.summary-item:nth-child(2) {
+	flex: 1;
+}
+.twoyearsago {
+	margin-bottom: 30px;
+}
+.twoyearsago img {
+	width: 100%;
+}
+.twoyearsago figcaption {
+	font-size: 12px;
+}
+
+@media (min-width: 769px) {
+	html {
+		font-size: 16px;
+	}
+	body {
+		background-size: 500px auto;
+	}
+	.section {
+		margin-bottom: 100px;
+		padding: 50px;
+		background: rgba(255,255,255,0.96);
+	}
+	.head-message {
+		font-size: 3rem;
+	}
+	.head-message small {
+		font-size: 1rem;
+	}
+	.session-item {
+		margin-bottom: 100px;
+	}
+	.session-active .session-item-con {
+		display: flex;
+		align-items: flex-start;
+	}
+	.section-title {
+		font-size: 3rem;
+		margin-bottom: 50px;
+	}
+	.profile-photo {
+		width: 18%;
+	}
+	.session-active .profile-photo {
+		flex-shrink: 0;
+		width: 18%;
+		margin: 0;
+		font-size: 0;
+	}
+	.session-title,
+	.session-active .session-title {
+		font-size: 1.5rem;
+	}
+	.session-info {
+		flex: 1;
+		margin-left: 45px;
+	}
+	.session-active .session-info {
+		margin-left: 45px;
+	}
+	.session-time {
+		margin-bottom: 40px;
+		font-size: 1.5rem;
+	}
+	.apply-link {
+		margin-top: 50px;
+	}
+	/* .intro-message {
+		display: flex;
+	}
+	.twoyearsago {
+		order: 1;
+		flex-shrink: 0;
+		width: 300px;
+		margin-right: 30px;
+	}
+	.intro-message .para {
+		order: 2;
+		flex: 1;
+		margin-top: -4px;
+	} */
+}
+
+@media (max-width: 320px) {
+	.section {
+		padding: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
