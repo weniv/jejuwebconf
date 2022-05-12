@@ -144,8 +144,12 @@ a {
 	margin-bottom: 30px;
 }
 .session-table {
+	display: none;
 	width: 100%;
 	color: #121314;
+}
+.session-active .session-table {
+	display: table;
 }
 .session-table thead {
 	display: block;
@@ -352,13 +356,13 @@ a {
 	display: none;
 }
 
-.recruit .recruit-table-con {
+/* .recruit .recruit-table-con {
 	display: none;
 }
 
 .recruit .recruit-table-con.active {
 	display: block;
-}
+} */
 
 .recruit .session-table {
 	margin-top: 20px;
