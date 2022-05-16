@@ -6,34 +6,75 @@
     }
 
     function initCanvas() {
-        setSize(), context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight), imgData = context.getImageData(imgX, imgY, imgWidth, imgHeight), particles = [];
-        for (var y = 0; y < imgData.height; y++)
-            for (var x = 0; x < imgData.width; x++)
-                if (128 < imgData.data[4 * x + 4 * y * imgData.width + 3]) {
+        setSize(); 
+        context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight);
+        imgData = context.getImageData(imgX, imgY, canvas.width, canvas.height);
+        particles = [];
+        
+        for (var y = 0; y < imgData.height; y++) {
+            for (var x = 0; x < imgData.width; x++) {
+                if (128 < imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 3]) {
                     var _particle = {
-                        color: 'rgb(' + imgData.data[4 * x + 4 * y * imgData.width] + ', ' + imgData.data[4 * x + 4 * y * imgData.width + 1] + ', ' + imgData.data[4 * x + 4 * y * imgData.width + 2] + ')',
-                        x: x + imgX,
-                        y: y + imgY,
-                        originX: x + imgX,
-                        originY: y + imgY,
-                        velocity: .5 * Math.random(),
+                        color: 'rgb(' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 1] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 2] + ')',
+                        x: x + (imgX / ratio),
+                        y: y + (imgY / ratio),
+                        originX: x + (imgX / ratio),
+                        originY: y + (imgY / ratio),
                         easeValue: 3 * Math.random(),
                         radian: 360 * Math.random() * Math.PI / 180
                     };
-                    particles.push(_particle)
+                    particles.push(_particle);
                 }
+            }
+        }
     }
 
     function setSize() {
-        canvas.width = innerWidth, canvas.height = innerHeight, maxScrollHeight = document.body.offsetHeight, 769 > innerWidth ? (divValue = 40, minParticleSize = innerWidth / 30, imgWidth = innerWidth / 1.4) : (divValue = 120, minParticleSize = innerWidth / 50, imgWidth = innerWidth / 2), imgHeight = imgWidth * imgElem.height / imgElem.width, imgX = innerWidth / 2 - imgWidth / 2, imgY = .3 * imgHeight, allElem.style.cssText = 'margin-top: ' + (2 * imgY + imgHeight) + 'px; margin-bottom: ' + imgHeight + 'px'
+        backingStoreRatio = context.webkitBackingStorePixelRatio ||
+            context.mozBackingStorePixelRatio ||
+            context.msBackingStorePixelRatio ||
+            context.oBackingStorePixelRatio ||
+            context.backingStorePixelRatio || 1,
+        ratio = scale / backingStoreRatio;
+
+        canvas.width = innerWidth * ratio;
+        canvas.height = innerHeight * ratio;
+        context.scale(ratio, ratio);
+
+        maxScrollHeight = document.body.offsetHeight;
+
+        769 > innerWidth 
+            ? (divValue = 40,
+                minParticleSize = innerWidth / 30,
+                imgWidth = innerWidth / 1.4)
+            : (divValue = 120,
+                minParticleSize = innerWidth / 50,
+                imgWidth = innerWidth / 2);
+
+        imgHeight = imgWidth * imgElem.height / imgElem.width;
+        imgX = innerWidth / 2 - imgWidth / 2;
+        imgY = .14 * imgHeight;
+        allElem.style.cssText = 'margin-top: ' + (2 * imgY + imgHeight) + 'px;';
     }
 
     function scrollHandler() {
-        context.clearRect(0, 0, canvas.width, canvas.height); particleSize = .025 * pageYOffset, particleSize < minParticleSize && (particleSize = minParticleSize);
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        particleSize = .025 * pageYOffset;
+        particleSize < minParticleSize && (particleSize = minParticleSize);
 
-        for (var i = 0; i < particles.length; i++) 0 == i % divValue && (particle = particles[i], particle.x = particle.originX + Math.cos(particle.radian) * pageYOffset * (pageYOffset / maxScrollHeight) * particle.easeValue, particle.y = particle.originY + Math.sin(particle.radian) * pageYOffset * (pageYOffset / maxScrollHeight) * particle.easeValue, context.fillStyle = particle.color, context.fillRect(particle.x, particle.y, particleSize, particleSize), 50 < pageYOffset && context.strokeRect(particle.x, particle.y, particleSize, particleSize));
+        for (var i = 0; i < particles.length; i++) {
+            0 == i % divValue && (
+                particle = particles[i],
+                particle.x = particle.originX + Math.cos(particle.radian) * pageYOffset * (pageYOffset / maxScrollHeight) * particle.easeValue,
+                particle.y = particle.originY + Math.sin(particle.radian) * pageYOffset * (pageYOffset / maxScrollHeight) * particle.easeValue,
+                context.fillStyle = particle.color,
+                context.fillRect(particle.x, particle.y, particleSize, particleSize),
+                50 < pageYOffset && context.strokeRect(particle.x, particle.y, particleSize, particleSize));
+        }
 
-        10 > pageYOffset && (context.clearRect(0, 0, canvas.width, canvas.height), context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight));
+        10 > pageYOffset && (
+            context.clearRect(0, 0, canvas.width, canvas.height),
+            context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight));
     }
     
     function scrollToTop() {
@@ -53,13 +94,18 @@
         imgY = void 0,
         imgWidth = void 0,
         imgHeight = void 0,
+        scale = window.devicePixelRatio || 1,
+        ratio = void 0,
+        backingStoreRatio = void 0,
         particles = [],
         particle = void 0,
         maxScrollHeight = void 0,
         minParticleSize = void 0;
 
-    imgElem.src = '/images/main-logo.png', imgElem.addEventListener('load', function() {
-        allElem.classList.remove('before-start'), initCanvas()
+    imgElem.src = '/images/main-logo.png';
+    imgElem.addEventListener('load', function() {
+        allElem.classList.remove('before-start');
+        initCanvas();
     });
 
     var particleSize = void 0,
