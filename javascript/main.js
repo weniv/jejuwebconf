@@ -6,7 +6,7 @@
     }
 
     function initCanvas() {
-        setSize(); 
+        setSize();
         context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight);
         imgData = context.getImageData(imgX, imgY, canvas.width, canvas.height);
         particles = [];
