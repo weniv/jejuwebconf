@@ -8,6 +8,9 @@ html {
 body {
 	background-color: #E5E5E5;
 }
+img {
+	image-rendering: -webkit-optimize-contrast;
+}
 .sr-only {
 	position: absolute;
     left: -10000px;

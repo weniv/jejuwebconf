@@ -69,7 +69,7 @@
                 particle.y = particle.originY + Math.sin(particle.radian) * pageYOffset * (pageYOffset / maxScrollHeight) * particle.easeValue,
                 context.fillStyle = particle.color,
                 context.fillRect(particle.x, particle.y, particleSize, particleSize),
-                50 < pageYOffset && context.strokeRect(particle.x, particle.y, particleSize, particleSize));
+                50 < pageYOffset && (context.strokeStyle = "rgb(71, 73, 77)", context.strokeRect(particle.x, particle.y, particleSize, particleSize)));
         }
 
         10 > pageYOffset && (
