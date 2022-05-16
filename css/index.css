@@ -144,9 +144,11 @@ a {
 	margin-bottom: 30px;
 }
 .session-table {
-	display: none;
 	width: 100%;
 	color: #121314;
+}
+.recruit .session-table {
+	display: none;
 }
 .session-active .session-table {
 	display: table;
