@@ -121,12 +121,17 @@ a {
 	color: #121314;
 }
 
-
 .management-list {
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 120px)); */
 	display: flex;
 	justify-content: center;
-	gap: 30px;
+	gap: 20px;
 	flex-wrap: wrap;
+}
+
+.management-list li {
+	width: 130px;
 }
 
 /* section-item */
@@ -494,6 +499,9 @@ a {
 	.recruit tbody td img {
 		width: 3em;
 		height: 3em;
+	}
+	.management-list li {
+		width: 100px;
 	}
 }
 
