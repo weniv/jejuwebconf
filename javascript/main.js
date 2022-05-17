@@ -9,7 +9,7 @@
         setSize();
 
         context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight);
-        imgData = scale == 2 
+        imgData = scale >= 2 
                         ? context.getImageData(imgX, imgY, canvas.width, canvas.height)
                         : context.getImageData(imgX, imgY, innerWidth, imgHeight)
 
@@ -48,9 +48,9 @@
         769 > innerWidth 
             ? (divValue = 40,
                ratio = 1.25,
-               minParticleSize = innerWidth / 20)
+               minParticleSize = innerWidth / 25)
             : (divValue = 120,
-               minParticleSize = innerWidth / 40,
+               minParticleSize = innerWidth / 45,
                ratio = 1.6);
 
         imgWidth = innerWidth / ratio;
