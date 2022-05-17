@@ -7,19 +7,23 @@
 
     function initCanvas() {
         setSize();
+
         context.drawImage(imgElem, imgX, imgY, imgWidth, imgHeight);
-        imgData = context.getImageData(imgX, imgY, canvas.width, canvas.height);
+        imgData = scale == 2 
+                        ? context.getImageData(imgX, imgY, canvas.width, canvas.height)
+                        : context.getImageData(imgX, imgY, innerWidth, imgHeight)
+
         particles = [];
         
         for (var y = 0; y < imgData.height; y++) {
             for (var x = 0; x < imgData.width; x++) {
-                if (128 < imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 3]) {
+                if (128 < imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 3]) {
                     var _particle = {
-                        color: 'rgb(' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 1] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 2] + ')',
-                        x: x + (imgX / ratio),
-                        y: y + (imgY / ratio),
-                        originX: x + (imgX / ratio),
-                        originY: y + (imgY / ratio),
+                        color: 'rgb(' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width] + ', ' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 1] + ', ' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 2] + ')',
+                        x: x + (imgX / scale),
+                        y: y + (imgY / scale),
+                        originX: x + (imgX / scale),
+                        originY: y + (imgY / scale),
                         easeValue: 3 * Math.random(),
                         radian: 360 * Math.random() * Math.PI / 180
                     };
@@ -30,31 +34,30 @@
     }
 
     function setSize() {
-        scale = window.devicePixelRatio || 1;
-        backingStoreRatio = context.webkitBackingStorePixelRatio ||
-            context.mozBackingStorePixelRatio ||
-            context.msBackingStorePixelRatio ||
-            context.oBackingStorePixelRatio ||
-            context.backingStorePixelRatio || 1,
-        ratio = scale / backingStoreRatio;
+        scale = Math.floor(window.devicePixelRatio);
 
-        canvas.width = innerWidth * ratio;
-        canvas.height = innerHeight * ratio;
-        context.scale(ratio, ratio);
+        canvas.style.width = innerWidth + "px";
+        canvas.style.height = innerHeight + "px";
+
+        canvas.width = Math.floor(innerWidth * scale);
+        canvas.height = Math.floor(innerHeight * scale);
+        context.scale(scale, scale);
 
         maxScrollHeight = document.body.offsetHeight;
 
         769 > innerWidth 
             ? (divValue = 40,
-                minParticleSize = innerWidth / 30,
-                imgWidth = innerWidth / 1.4)
+               ratio = 1.25,
+               minParticleSize = innerWidth / 30)
             : (divValue = 120,
-                minParticleSize = innerWidth / 50,
-                imgWidth = innerWidth / 2);
+               minParticleSize = innerWidth / 50,
+               ratio = 1.6);
 
+        imgWidth = innerWidth / ratio;
         imgHeight = imgWidth * imgElem.height / imgElem.width;
         imgX = innerWidth / 2 - imgWidth / 2;
         imgY = .24 * imgHeight;
+        
         allElem.style.cssText = 'margin-top: ' + (2 * imgY + imgHeight) + 'px;';
     }
 
@@ -97,7 +100,6 @@
         imgHeight = void 0,
         scale = void 0,
         ratio = void 0,
-        backingStoreRatio = void 0,
         particles = [],
         particle = void 0,
         maxScrollHeight = void 0,
