@@ -48,16 +48,17 @@
         769 > innerWidth 
             ? (divValue = 40,
                ratio = 1.25,
-               minParticleSize = innerWidth / 30)
+               minParticleSize = innerWidth / 20)
             : (divValue = 120,
-               minParticleSize = innerWidth / 50,
+               minParticleSize = innerWidth / 40,
                ratio = 1.6);
 
         imgWidth = innerWidth / ratio;
+        imgWidth > 800 && (imgWidth = 900);
         imgHeight = imgWidth * imgElem.height / imgElem.width;
         imgX = innerWidth / 2 - imgWidth / 2;
         imgY = .24 * imgHeight;
-        
+
         allElem.style.cssText = 'margin-top: ' + (2 * imgY + imgHeight) + 'px;';
     }
 
