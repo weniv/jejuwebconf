@@ -13,13 +13,13 @@
         
         for (var y = 0; y < imgData.height; y++) {
             for (var x = 0; x < imgData.width; x++) {
-                if (128 < imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 3]) {
+                if (128 < imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 3]) {
                     var _particle = {
-                        color: 'rgb(' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width] + ', ' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 1] + ', ' + imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 2] + ')',
-                        x: x + (imgX / scale),
-                        y: y + (imgY / scale),
-                        originX: x + (imgX / scale),
-                        originY: y + (imgY / scale),
+                        color: 'rgb(' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 1] + ', ' + imgData.data[4 * x * ratio + 4 * y * ratio * imgData.width + 2] + ')',
+                        x: x + (imgX / ratio),
+                        y: y + (imgY / ratio),
+                        originX: x + (imgX / ratio),
+                        originY: y + (imgY / ratio),
                         easeValue: 3 * Math.random(),
                         radian: 360 * Math.random() * Math.PI / 180
                     };
@@ -31,9 +31,16 @@
 
     function setSize() {
         scale = window.devicePixelRatio || 1;
-        canvas.width = innerWidth * scale;
-        canvas.height = innerHeight * scale;
-        context.scale(scale, scale);
+        backingStoreRatio = context.webkitBackingStorePixelRatio ||
+            context.mozBackingStorePixelRatio ||
+            context.msBackingStorePixelRatio ||
+            context.oBackingStorePixelRatio ||
+            context.backingStorePixelRatio || 1,
+        ratio = scale / backingStoreRatio;
+
+        canvas.width = innerWidth * ratio;
+        canvas.height = innerHeight * ratio;
+        context.scale(ratio, ratio);
 
         maxScrollHeight = document.body.offsetHeight;
 
@@ -89,6 +96,8 @@
         imgWidth = void 0,
         imgHeight = void 0,
         scale = void 0,
+        ratio = void 0,
+        backingStoreRatio = void 0,
         particles = [],
         particle = void 0,
         maxScrollHeight = void 0,
