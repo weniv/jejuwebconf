@@ -126,16 +126,14 @@ a {
 }
 
 .management-list {
-	/* display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 120px)); */
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 1.25rem;
 	flex-wrap: wrap;
 }
 
 .management-list li {
-	width: 130px;
+	width: 10em;
 }
 
 /* section-item */
@@ -475,6 +473,12 @@ a {
 	cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+	.management-list li {
+		width: 8em;
+	}
+}
+
 @media (max-width: 769px) {
 	html {
 		font-size: 14px;
@@ -496,8 +500,9 @@ a {
 		width: 3em;
 		height: 3em;
 	}
+
 	.management-list li {
-		width: 100px;
+		width: 7.5em;
 	}
 }
 
