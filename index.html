@@ -1,1034 +1,1463 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-74527114-8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74527114-8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+      gtag("config", "UA-74527114-8");
+    </script>
+    <title>2023 제주 웹 컨퍼런스</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="2023 제주 웹 컨퍼런스" />
+    <meta
+      property="og:description"
+      content="2023년 8월 4일-8월 5일, 제주에서 열리는 웹 컨퍼런스입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://jejuweb.kr/images/main-thumbnail.png"
+    />
+    <meta property="og:url" content="https://jejuweb.kr/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/images/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/images/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/images/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icon/favicon-16x16.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
 
-		gtag('config', 'UA-74527114-8');
-	</script>
-	<title>2022 제주 웹 컨퍼런스</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="2022 제주 웹 컨퍼런스">
-	<meta property="og:description" content="2022년 6월 2일-6월 4일, 제주에서 열리는 웹 컨퍼런스입니다.">
-	<meta property="og:image" content="https://jejuweb.kr/images/main-thumbnail.png">
-	<meta property="og:url" content="https://jejuweb.kr/">
-	<link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/images/icon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/images/icon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/images/icon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/images/icon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/images/icon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/images/icon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/images/icon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/images/icon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/images/icon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
-	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href="/css/index.css">
-</head>
+  <body>
+    <h1>
+      <img
+        src="/images/main-logo.png"
+        alt="2023 제주 웹 컨퍼런스"
+        style="position: absolute; width: 0; height: 0"
+      />
+    </h1>
+    <div class="all before-start">
+      <section class="section intro">
+        <h2>
+          <img src="images/main-title.png" alt="Jeju 웹 컨퍼런스" />
+        </h2>
+        <p class="intro-title">제주에서 같이 모여 "웹" 이야기 함께 나눠요!</p>
+        <p class="intro-message">
+          제주 웹 컨퍼런스는 WEB 기술과 관련된 국내외 커뮤니티와 제주 커뮤니티
+          간의 교류를 통하여 지리적인 한계를 극복하고 기술 발전에 대한 다양한
+          시각을 나누는 장을 마련합니다. 또한 국내외 최고 기술자들과 제주
+          개발자의 밋업을 통해 제주 웹 기술 역량강화를 도모합니다.
+        </p>
+        <dl class="conf-summary">
+          <dt class="summary-item">일 시</dt>
+          <dd class="summary-item">
+            2023년 8월 4일(금) ~ 8월 5일(토), 12:00 ~ 18:00
+          </dd>
+          <dt class="summary-item">장 소</dt>
+          <dd class="summary-item">제주창조경제혁신센터 3층 J-SPACE</dd>
+          <dt class="summary-item">주 제</dt>
+          <dd class="summary-item">웹(Web)</dd>
+          <dt class="summary-item">참가비</dt>
+          <dd class="summary-item">무료</dd>
+          <dt class="summary-item">주 관</dt>
+          <dd class="summary-item">
+            <a href="http://www.jejuiucc.or.kr/default/" target="_blank"
+              >(사)제주산학융합원</a
+            >,
+            <a href="https://ccei.creativekorea.or.kr/jeju/" target="_blank"
+              >(재)제주창조경제혁신센터</a
+            >,
+            <a
+              href="https://sites.google.com/view/gdeveloperskorea/gdg"
+              target="_blank"
+              >Google Developer Groups Jeju</a
+            >,
+            <a href="http://www.paullab.co.kr/" target="_blank">(주)위니브</a>
+          </dd>
+        </dl>
+        <a
+          href="https://forms.gle/Fntu2KQ9dnU8LWKN9"
+          target="_blank"
+          class="apply-link"
+          >참가신청</a
+        >
+        <ul class="management-list">
+          <li class="management-item">
+            <img
+              src="/images/logo-manage1.png"
+              alt="(재)제주테크노파크"
+            />
+          </li>
+          <li class="management-item">
+            <img
+              src="/images/logo-manage2.png"
+              alt="(사)제주산학융합원"
+            />
+          </li>
+          <li class="management-item">
+            <img src="/images/logo-jdc.png" alt="jdc" />
+          </li>
+          <li class="management-item">
+            <img src="/images/logo-manage3.png" alt="제주더큰내일센터" />
+          </li>
+          <li class="management-item">
+            <img src="/images/logo-weniv.png" alt="(주)위니브" />
+          </li>
+        </ul>
+      </section>
+      <!-- Day 1 -->
+      <section class="section">
+        <h2 class="section-title">Day 1<span>2022년 6월 2일(목)</span></h2>
+        <ul class="session-list">
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>12:00 ~ 12:50</th>
+                  <th>장소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt=""
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >Conference 안내 및 등록, 오프닝</strong
+                      >
+                      <strong class="profile-name">제주 웹 컨퍼런스</strong>
+                    </div>
+                  </td>
+                  <td>투게더 존<br />중앙 홀</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-<body>
-	<h1><img src="/images/main-logo.png" alt="2022 제주 웹 컨퍼런스" style="position: absolute; width: 0; height: 0"></h1>
-	<div class="all before-start">
-		<section class="section intro">
-			<h2>
-				<img src="images/main-title.png" alt="Jeju 웹 컨퍼런스">
-			</h2>
-			<p class="head-message">
-				제주에서 같이 모여 "웹" 이야기 함께 나눠요!
-			</p>
-			<p class="intro-message para">
-				제주 웹 컨퍼런스는 WEB 기술과 관련된 국내외 커뮤니티와 제주 커뮤니티 간의 교류를 통하여 지리적인 한계를 극복하고 기술 발전에 대한 다양한 시각을 나누는 장을 마련합니다. 또한 국내외 최고 기술자들과 제주 개발자의 밋업을 통해 제주 웹 기술 역량강화를 도모합니다.
-			</p>
-			<dl class="conf-summary">
-				<dt class="summary-item">일 시</dt>
-				<dd class="summary-item">2022년 6월 2일(목) ~ 6월 4일(토), 13:00 ~ 18:00</dd>
-				<dt class="summary-item">장 소</dt>
-				<dd class="summary-item">
-					제주첨단과학단지 세미양빌딩 D동 2층 투게더 존
-				</dd>
-				<dt class="summary-item">주 제</dt>
-				<dd class="summary-item">웹(Web)</dd>
-				<dt class="summary-item">참가비</dt>
-				<dd class="summary-item">무료</dd>
-				<dt class="summary-item">주 관</dt>
-				<dd class="summary-item">
-					<a href="https://www.jejutp.or.kr/" target="_blank">(재)제주테크노파크</a>,
-					<a href="http://www.jejuiucc.or.kr/default/" target="_blank">(사)제주산학융합원</a>,
-					<a href="https://www.jdcenter.com/main.cs" target="_blank">JDC 제주국제자유도시개발센터</a>,
-					<a href="http://www.jdnc.or.kr/index.do" target="_blank">제주더큰내일센터</a>,
-					<a href="http://www.paullab.co.kr/" target="_blank">(주)위니브</a>
-				</dd>
-			</dl>
-			<a href="https://forms.gle/Fntu2KQ9dnU8LWKN9" target="_blank"  class="apply-link">참가신청</a>
-			<ul class="management-list">
-				<li class="management-item">
-					<img src="/images/logo-manage1.png" alt="(재)제주테크노파크">
-				</li>
-				<li class="management-item">
-					<img src="/images/logo-manage2.png" alt="(사)제주산학융합원">
-				</li>
-				<li class="management-item">
-					<img src="/images/logo-jdc.png" alt="jdc">
-				</li>
-				<li class="management-item">
-					<img src="/images/logo-manage3.png" alt="제주더큰내일센터">
-				</li>
-				<li class="management-item">
-					<img src="/images/logo-weniv.png" alt="(주)위니브">
-				</li>
-			</ul>
-		</section>
-		<!-- Day 1 -->
-		<section class="section">
-			<h2 class="section-title">
-				Day 1<span>2022년 6월 2일(목)</span>
-			</h2>
-			<ul class="session-list">
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>12:00 ~ 12:50</th>
-								<th>장소</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="">
-									<div class="session-info">
-										<strong class="session-title">Conference 안내 및 등록, 오프닝</strong>
-										<strong class="profile-name">제주 웹 컨퍼런스</strong>
-									</div>
-								</td>
-								<td>투게더 존<br>중앙 홀</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>13:00 ~ 13:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="현수영님 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title">Web3를 위한 인프라</strong>
+                      <strong class="profile-name">DSRV | 현수영</strong>
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="조철현님 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >42서울에서 개발자가 되는 과정</strong
+                      >
+                      <strong class="profile-name"
+                        >(재)이노베이션 아카데미 | 조철현</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>13:00 ~ 13:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="현수영님 프로필">
-									<div class="session-info">
-										<strong class="session-title">Web3를 위한 인프라</strong>
-										<strong class="profile-name">DSRV | 현수영</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="조철현님 프로필">
-									<div class="session-info">
-										<strong class="session-title">42서울에서 개발자가 되는 과정</strong>
-										<strong class="profile-name">(재)이노베이션 아카데미 | 조철현</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>14:00 ~ 14:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="저스틴유 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >웹어셈블리와 JAM 스택을 이용한 헤드리스 CMS
+                        만들기</strong
+                      >
+                      <strong class="profile-name"
+                        >마이크로소프트 | 저스틴 유</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김도윤 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >테스트가 이끄는 리팩토링(1/2)</strong
+                      >
+                      <strong class="profile-name">B사 | 김도윤</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>14:00 ~ 14:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="저스틴유 프로필">
-									<div class="session-info">
-										<strong class="session-title">웹어셈블리와 JAM 스택을 이용한 헤드리스 CMS 만들기</strong>
-										<strong class="profile-name">마이크로소프트 | 저스틴 유</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김도윤 프로필">
-									<div class="session-info">
-										<strong class="session-title">테스트가 이끄는 리팩토링(1/2)</strong>
-										<strong class="profile-name">B사 | 김도윤</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>15:00 ~ 15:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="고승원 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >개발자 = 콘텐츠 크리에이터</strong
+                      >
+                      <strong class="profile-name"
+                        >개발자의품격 | 고승원</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김도윤 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >테스트가 이끄는 리팩토링(2/2)</strong
+                      >
+                      <strong class="profile-name">B사 | 김도윤</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>15:00 ~ 15:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="고승원 프로필">
-									<div class="session-info">
-										<strong class="session-title">개발자 = 콘텐츠 크리에이터</strong>
-										<strong class="profile-name">개발자의품격 | 고승원</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김도윤 프로필">
-									<div class="session-info">
-										<strong class="session-title">테스트가 이끄는 리팩토링(2/2)</strong>
-										<strong class="profile-name">B사 | 김도윤</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>16:00 ~ 16:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="여다희 외 7명 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >비 온 뒤에 단단해지는 땅처럼 : 신입 개발자들의 학습과
+                        성장 이야기</strong
+                      >
+                      <strong class="profile-name"
+                        >여다희, 조민경, 임현지, 김미리, 전서희, 류재준, 유준상,
+                        황혜명</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="장동수 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >(면접에서 자주 나오는) HTTP : 브라우저에서
+                        서버까지</strong
+                      >
+                      <strong class="profile-name"
+                        >데이원컴퍼니 | 장동수</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>16:00 ~ 16:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="여다희 외 7명 프로필">
-									<div class="session-info">
-										<strong class="session-title">비 온 뒤에 단단해지는 땅처럼 : 신입 개발자들의 학습과 성장 이야기</strong>
-										<strong class="profile-name">여다희, 조민경, 임현지, 김미리, 전서희, 류재준, 유준상, 황혜명</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="장동수 프로필">
-									<div class="session-info">
-										<strong class="session-title">(면접에서 자주 나오는) HTTP : 브라우저에서 서버까지</strong>
-										<strong class="profile-name">데이원컴퍼니 | 장동수</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>17:00 ~ 17:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="정원봉 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >타입스크립트와 캔버스로 만드는, 토이 프로젝트
+                        개발기</strong
+                      >
+                      <strong class="profile-name">컨스택츠 | 김대현</strong>
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="조민구 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title">게임회사에서의 웹</strong>
+                      <strong class="profile-name">넥슨코리아 | 조민구</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        <div class="notice-message">
+          <p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p>
+        </div>
+      </section>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>17:00 ~ 17:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="정원봉 프로필">
-									<div class="session-info">
-										<strong class="session-title">타입스크립트와 캔버스로 만드는, 토이 프로젝트 개발기</strong>
-										<strong class="profile-name">컨스택츠 | 김대현</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="조민구 프로필">
-									<div class="session-info">
-										<strong class="session-title">게임회사에서의 웹</strong>
-										<strong class="profile-name">넥슨코리아 | 조민구</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-			</ul>
-			<div class="notice-message"><p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p></div>
-		</section>
+      <!-- Day 2 -->
+      <section class="section">
+        <h2 class="section-title">Day 2<span>2022년 6월 3일(금)</span></h2>
+        <ul class="session-list">
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>12:00 ~ 12:50</th>
+                  <th>장소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt=""
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >Conference 안내 및 등록</strong
+                      >
+                      <strong class="profile-name">제주 웹 컨퍼런스</strong>
+                    </div>
+                  </td>
+                  <td>투게더 존 중앙 홀</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-		<!-- Day 2 -->
-		<section class="section">
-			<h2 class="section-title">
-				Day 2<span>2022년 6월 3일(금)</span>
-			</h2>
-			<ul class="session-list">
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>12:00 ~ 12:50</th>
-								<th>장소</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="">
-									<div class="session-info">
-										<strong class="session-title">Conference 안내 및 등록</strong>
-										<strong class="profile-name">제주 웹 컨퍼런스</strong>
-									</div>
-								</td>
-								<td>투게더 존 중앙 홀</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>13:00 ~ 13:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김영웅, 장희승 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >프론트엔드 부트캠프를 준비하면서 반드시 고민해야 할
+                        내용 : 고객, 학습, 성장(1/2)</strong
+                      >
+                      <strong class="profile-name"
+                        >멋쟁이사자처럼 | 김영웅, 장희승</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="강지윤 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >2년차 웹퍼블리셔 시선으로 본 프론트엔드</strong
+                      >
+                      <strong class="profile-name"
+                        >민병철교육그룹 | 강지윤</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>13:00 ~ 13:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김영웅, 장희승 프로필">
-									<div class="session-info">
-										<strong class="session-title">프론트엔드 부트캠프를 준비하면서 반드시 고민해야 할 내용 : 고객, 학습, 성장(1/2)</strong>
-										<strong class="profile-name">멋쟁이사자처럼 | 김영웅, 장희승</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="강지윤 프로필">
-									<div class="session-info">
-										<strong class="session-title">2년차 웹퍼블리셔 시선으로 본 프론트엔드</strong>
-										<strong class="profile-name">민병철교육그룹 | 강지윤</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>14:00 ~ 14:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김영웅, 장희승 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >프론트엔드 부트캠프를 준비하면서 반드시 고민해야 할
+                        내용 : 고객, 학습, 성장(2/2)</strong
+                      >
+                      <strong class="profile-name"
+                        >멋쟁이사자처럼 | 김영웅, 장희승</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김민영 외 6명 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >TypeScript Basic : 스크립트에 타입을 더하다.</strong
+                      >
+                      <strong class="profile-name"
+                        >김민영, 김성훈, 박성범, 양다은, 이세영, 전유진,
+                        주다빈</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>14:00 ~ 14:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김영웅, 장희승 프로필">
-									<div class="session-info">
-										<strong class="session-title">프론트엔드 부트캠프를 준비하면서 반드시 고민해야 할 내용 : 고객, 학습, 성장(2/2)</strong>
-										<strong class="profile-name">멋쟁이사자처럼 | 김영웅, 장희승</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김민영 외 6명 프로필">
-									<div class="session-info">
-										<strong class="session-title">TypeScript Basic : 스크립트에 타입을 더하다.</strong>
-										<strong class="profile-name">김민영, 김성훈, 박성범, 양다은, 이세영, 전유진, 주다빈</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>15:00 ~ 15:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="고태건 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >Klaytn으로 간단하게 Web3 체험하기(1/2)</strong
+                      >
+                      <strong class="profile-name"
+                        >크러스트유니버스 | 고태건</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김지수 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >언택트 시대에 주니어 개발자들이 함께 성장하는
+                        방법</strong
+                      >
+                      <strong class="profile-name"
+                        >김지수, 김민영, 김민석, 김희진, 이수빈, 최수빈</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>15:00 ~ 15:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="고태건 프로필">
-									<div class="session-info">
-										<strong class="session-title">Klaytn으로 간단하게 Web3 체험하기(1/2)</strong>
-										<strong class="profile-name">크러스트유니버스 | 고태건</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김지수 프로필">
-									<div class="session-info">
-										<strong class="session-title">언택트 시대에 주니어 개발자들이 함께 성장하는 방법</strong>
-										<strong class="profile-name">김지수, 김민영, 김민석, 김희진, 이수빈, 최수빈</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>16:00 ~ 16:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="고태건 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >Klaytn으로 간단하게 Web3 체험하기(2/2)</strong
+                      >
+                      <strong class="profile-name"
+                        >크러스트유니버스 | 고태건</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="손수철 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >UX : 경험을 덜어낼 때 경험은 개선된다</strong
+                      >
+                      <strong class="profile-name">손수철</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>16:00 ~ 16:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="고태건 프로필">
-									<div class="session-info">
-										<strong class="session-title">Klaytn으로 간단하게 Web3 체험하기(2/2)</strong>
-										<strong class="profile-name">크러스트유니버스 | 고태건</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="손수철 프로필">
-									<div class="session-info">
-										<strong class="session-title">UX : 경험을 덜어낼 때 경험은 개선된다</strong>
-										<strong class="profile-name">손수철</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>17:00 ~ 17:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="저스틴유 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >웹 애플리케이션 배포 경험 향상 베스트 프랙티스</strong
+                      >
+                      <strong class="profile-name"
+                        >마이크로소프트 | 저스틴 유</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="김준희 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title">앗! 3D 2D보다 쉽다!</strong>
+                      <strong class="profile-name">Belivvr | 김준희</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        <div class="notice-message">
+          <p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p>
+        </div>
+      </section>
 
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>17:00 ~ 17:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="저스틴유 프로필">
-									<div class="session-info">
-										<strong class="session-title">웹 애플리케이션 배포 경험 향상 베스트 프랙티스</strong>
-										<strong class="profile-name">마이크로소프트 | 저스틴 유</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="김준희 프로필">
-									<div class="session-info">
-										<strong class="session-title">앗! 3D 2D보다 쉽다!</strong>
-										<strong class="profile-name">Belivvr | 김준희</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-			</ul>
-			<div class="notice-message"><p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p></div>
-		</section>
+      <!-- Day 3 -->
+      <section class="section">
+        <h2 class="section-title">Day 3<span>2022년 6월 4일(토)</span></h2>
+        <ul class="session-list">
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>12:00 ~ 12:50</th>
+                  <th>장소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt=""
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >Conference 안내 및 등록</strong
+                      >
+                      <strong class="profile-name">제주 웹 컨퍼런스</strong>
+                    </div>
+                  </td>
+                  <td>투게더 존 중앙 홀</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>13:00 ~ 13:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="저스틴유 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >풀스택 개발자를 위한 깃헙 액션 바닥부터
+                        시작하기(1/3)</strong
+                      >
+                      <strong class="profile-name"
+                        >마이크로소프트 | 저스틴 유</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="조아라 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >JavaScript로 게임 만들어서 부자되기</strong
+                      >
+                      <strong class="profile-name">조아라</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>14:00 ~ 14:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="저스틴유 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >풀스택 개발자를 위한 깃헙 액션 바닥부터
+                        시작하기(2/3)</strong
+                      >
+                      <strong class="profile-name"
+                        >마이크로소프트 | 저스틴 유</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="장효순 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title">인턴으로 살아남기</strong>
+                      <strong class="profile-name">로보게이트 | 장효순</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>15:00 ~ 15:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="저스틴유 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >풀스택 개발자를 위한 깃헙 액션 바닥부터
+                        시작하기(3/3)</strong
+                      >
+                      <strong class="profile-name"
+                        >마이크로소프트 | 저스틴 유</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="민창현 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >AWS 서버리스로 만드는 데이터 파이프라인</strong
+                      >
+                      <strong class="profile-name">업스테이지 | 민창현</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>16:00 ~ 16:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="노래경 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >노코드로 창업하기(1/2)</strong
+                      >
+                      <strong class="profile-name">삼성전자 | 노래경</strong>
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="한재현 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >불안해서 살펴보는 서비스 워커</strong
+                      >
+                      <strong class="profile-name">위니브 | 한재현</strong>
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="session-item">
+            <table class="session-table">
+              <thead>
+                <tr>
+                  <th>17:00 ~ 17:50</th>
+                  <th>강의실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="노래경 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title"
+                        >노코드로 창업하기(2/2)</strong
+                      >
+                      <strong class="profile-name">삼성전자 | 노래경</strong>
+                    </div>
+                  </td>
+                  <td>T-7</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      class="default"
+                      src="images/profile/default.png"
+                      alt="문성원 프로필"
+                    />
+                    <div class="session-info">
+                      <strong class="session-title">Web3와 탈중앙 게임</strong>
+                      <strong class="profile-name"
+                        >플라네타리움(주 나인코퍼레이션) | 문성원</strong
+                      >
+                    </div>
+                  </td>
+                  <td>T-6</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        <div class="notice-message">
+          <p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p>
+        </div>
+      </section>
 
-		<!-- Day 3 -->
-		<section class="section">
-			<h2 class="section-title">
-				Day 3<span>2022년 6월 4일(토)</span>
-			</h2>
-			<ul class="session-list">
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>12:00 ~ 12:50</th>
-								<th>장소</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="">
-									<div class="session-info">
-										<strong class="session-title">Conference 안내 및 등록</strong>
-										<strong class="profile-name">제주 웹 컨퍼런스</strong>
-									</div>
-								</td>
-								<td>투게더 존 중앙 홀</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>13:00 ~ 13:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="저스틴유 프로필">
-									<div class="session-info">
-										<strong class="session-title">풀스택 개발자를 위한 깃헙 액션 바닥부터 시작하기(1/3)</strong>
-										<strong class="profile-name">마이크로소프트 | 저스틴 유</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="조아라 프로필">
-									<div class="session-info">
-										<strong class="session-title">JavaScript로 게임 만들어서 부자되기</strong>
-										<strong class="profile-name">조아라</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>14:00 ~ 14:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="저스틴유 프로필">
-									<div class="session-info">
-										<strong class="session-title">풀스택 개발자를 위한 깃헙 액션 바닥부터 시작하기(2/3)</strong>
-										<strong class="profile-name">마이크로소프트 | 저스틴 유</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="장효순 프로필">
-									<div class="session-info">
-										<strong class="session-title">인턴으로 살아남기</strong>
-										<strong class="profile-name">로보게이트 | 장효순</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>15:00 ~ 15:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="저스틴유 프로필">
-									<div class="session-info">
-										<strong class="session-title">풀스택 개발자를 위한 깃헙 액션 바닥부터 시작하기(3/3)</strong>
-										<strong class="profile-name">마이크로소프트 | 저스틴 유</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="민창현 프로필">
-									<div class="session-info">
-										<strong class="session-title">AWS 서버리스로 만드는 데이터 파이프라인</strong>
-										<strong class="profile-name">업스테이지 | 민창현</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>16:00 ~ 16:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="노래경 프로필">
-									<div class="session-info">
-										<strong class="session-title">노코드로 창업하기(1/2)</strong>
-										<strong class="profile-name">삼성전자 | 노래경</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="한재현 프로필">
-									<div class="session-info">
-										<strong class="session-title">불안해서 살펴보는 서비스 워커</strong>
-										<strong class="profile-name">위니브 | 한재현</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-				<li class="session-item">
-					<table class="session-table">
-						<thead>
-							<tr>
-								<th>17:00 ~ 17:50</th>
-								<th>강의실</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="노래경 프로필">
-									<div class="session-info">
-										<strong class="session-title">노코드로 창업하기(2/2)</strong>
-										<strong class="profile-name">삼성전자 | 노래경</strong>
-									</div>
-								</td>
-								<td>T-7</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="default" src="images/profile/default.png" alt="문성원 프로필">
-									<div class="session-info">
-										<strong class="session-title">Web3와 탈중앙 게임</strong>
-										<strong class="profile-name">플라네타리움(주 나인코퍼레이션) | 문성원</strong>
-									</div>
-								</td>
-								<td>T-6</td>
-							</tr>
-						</tbody>
-					</table>
-				</li>
-			</ul>
-			<div class="notice-message"><p>T-5 강의실에서는 커뮤니케이션 룸이 운영됩니다.</p></div>
-		</section>
+      <section class="section">
+        <h2 class="section-title">운영팀</h2>
+        <ul class="session-list team">
+          <li class="session-item">
+            <figure class="profile-photo">
+              <img src="/images/profile/weniv.png" alt="" />
+            </figure>
+            <div class="session-info">
+              <strong class="profile-name">바울랩, 위니브</strong>
+              <p class="profile-role">컨퍼런스 기획/운영 총괄</p>
+              <p class="profile-desc para">
+                <a href="http://paullab.co.kr/index.html" target="_blank"
+                  >위니브(바울랩)</a
+                >의 비전은 기술의 교육 기회를 누구나 차등 없이 받을 수 있게
+                대중화, 보편화 시스템화하는 것입니다. 지역 기반 ICT 대안 교육
+                플랫폼, 유료와 무료 ICT 영상 콘텐츠를 제작하며, 지역 교육 기회의
+                불평등, 접근성의 한계 등 기존 교육의 한계를 극복하기 위한 다양한
+                시도를 하고 있습니다.
+              </p>
+            </div>
+          </li>
+          <li class="session-item">
+            <figure class="profile-photo">
+              <img src="/images/profile/1min_coding.png" alt="유준모" />
+            </figure>
+            <div class="session-info">
+              <strong class="profile-name">
+                유준모<small>스튜디오밀</small>
+              </strong>
+              <p class="profile-role">컨퍼런스 웹사이트 제작</p>
+              <p class="profile-desc para">
+                서울에서 개발자/디자이너로 일했고 지금은 제주에서 1인기업
+                스튜디오밀을 운영하며 웹사이트 만드는 일, 강의, 영상 만드는 일,
+                콘텐츠 만드는 일 등 해보고 싶은거 이것저것 해보며 살고 있습니다.
+                비주얼 임팩트가 있는 인터랙티브 웹 개발에 특히 관심이 많고 관련
+                기술들을 공유하는 페이스북
+                <a href="https://facebook.com/1mincoding/" target="_blank"
+                  >1분코딩</a
+                >과
+                <a href="https://www.youtube.com/c/1분코딩" target="_blank"
+                  >유튜브</a
+                >, 그리고
+                <a href="https://studiomeal.com/" target="_blank">스튜디오밀</a
+                >을 운영하고 있어요.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-		<section class="section">
-			<h2 class="section-title">운영팀</h2>
-			<ul class="session-list team">
-				<li class="session-item">
-					<figure class="profile-photo">
-						<img src="/images/profile/weniv.png" alt="">
-					</figure>
-					<div class="session-info">
-						<strong class="profile-name">바울랩, 위니브</strong>
-						<p class="profile-role">컨퍼런스 기획/운영 총괄</p>
-						<p class="profile-desc para">
-							<a href="http://paullab.co.kr/index.html" target="_blank">위니브(바울랩)</a>의 비전은 기술의 교육 기회를 누구나 차등 없이 받을 수 있게 대중화, 보편화 시스템화하는 것입니다. 지역 기반 ICT 대안 교육 플랫폼, 유료와 무료 ICT 영상 콘텐츠를 제작하며, 지역 교육 기회의 불평등, 접근성의 한계 등 기존 교육의 한계를 극복하기 위한 다양한 시도를 하고 있습니다.
-						</p>
-					</div>
-				</li>
-				<li class="session-item">
-					<figure class="profile-photo">
-						<img src="/images/profile/1min_coding.png" alt="유준모">
-					</figure>
-					<div class="session-info">
-						<strong class="profile-name">
-							유준모<small>스튜디오밀</small>
-						</strong>
-						<p class="profile-role">컨퍼런스 웹사이트 제작</p>
-						<p class="profile-desc para">
-							서울에서 개발자/디자이너로 일했고 지금은 제주에서 1인기업 스튜디오밀을 운영하며 웹사이트 만드는 일, 강의, 영상 만드는 일, 콘텐츠 만드는 일 등
-							해보고 싶은거 이것저것 해보며 살고 있습니다. 비주얼 임팩트가 있는 인터랙티브 웹 개발에 특히 관심이 많고 관련 기술들을 공유하는 페이스북 <a
-								href="https://facebook.com/1mincoding/" target="_blank">1분코딩</a>과 <a href="https://www.youtube.com/c/1분코딩" target="_blank">유튜브</a>, 그리고 <a
-								href="https://studiomeal.com/" target="_blank">스튜디오밀</a>을 운영하고 있어요.
-						</p>
-					</div>
-				</li>
-			</ul>
-		</section>
-
-		<section class="section recruit">
-			<h2 class="section-title">기업 채용</h2>
-			<ul class="notice-list">
-				<li class="notice-item notice-mail">
-					<p class="para">
-						채용을 희망하는 기업의 채용 공고 QR을 게시하고 있습니다. 게시를 희망하는 기업은 메일로 연락 부탁드립니다.
-						<small>(문의 메일 : paul-lab@naver.com)</small>
-					</p>
-				</li>
-				<li class="notice-item notice-qr">
-					<p class="para">
-						채용 공고 QR은 아래 버튼을 클릭하면 확인할 수 있습니다.
-					</p>
-				</li>
-			</ul>
-			<table class="session-table">
-				<thead>
-					<tr>
-						<th>기업</th>
-						<th>QR</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-upstage.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">업스테이지</strong>
-								<a href="https://www.upstage.ai/careers" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-upstage.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-pentaworks.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">펜타웍스</strong>
-								<a href="http://naver.me/FPurQVzB" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-pentaworks.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-nspace.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">앤스페이스</strong>
-								<a href="http://nspace.co/career" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-nspace.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-krust.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">크러스트 유니버스</strong>
-								<a href="https://krust-universe.breezy.hr/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-krust.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-youha.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">유하</strong>
-								<a href="https://tech.youha.info/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-youha.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-weeat.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">위잇딜라이트(위허들링)</strong>
-								<p class="para">
-									공고에는 3년차 이상이라고 기재되어 있지만, 최소한의 기술적인 역량만 보유하고 있다면 연차는 크게 개의치 않습니다.
-								</p>
-								<a href="https://bit.ly/weeatdevelop" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-weeat.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-angel_trippy.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">엔젤리그</strong>
-								<a href="https://www.wanted.co.kr/wd/53012" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-angel_trippy.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-wondervari.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">원더베리</strong>
-								<a href="https://blog.hummit.co/채용/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-wondervari.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-ymjlab.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">요망진연구소</strong>
-								<a href="https://www.jobkorea.co.kr/Recruit/GI_Read/38372706" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-ymjlab.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-frip.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">프렌트립(Frip 서비스 운영)</strong>
-								<a href="https://careers.frip.co.kr/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-frip.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-dk.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">디케이테크인</strong>
-								<a href="https://dktechin-tso.notion.site/dktechin-tso/dk-techin-7b43608d19e44b718229515a87f94ffa" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-dk.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-jaranda.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">자란다</strong>
-								<a href="https://team.jaranda.kr/front" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-jaranda.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-clo.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">CLO Virtual Fashion</strong>
-								<a href="https://jobs.lever.co/clovirtualfashion/f6e3d792-c0b8-4235-822c-4bbaad5fdb92" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-clo.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-kaflix.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">캐플릭스</strong>
-								<a href="https://www.kaflix.com/recruit" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-kaflix.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-mfgarden.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">맘꽃가든</strong>
-								<a href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42770174&view_type=etc" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-mfgarden.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-modulabs.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">모두의연구소</strong>
-								<a href="https://modulabs.oopy.io/recruit" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-modulabs.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-evlab.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">전기차평가연구소</strong>
-								<a href="https://www.rocketpunch.com/jobs/126337" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-evlab.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-chain_partners.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">체인파트너스</strong>
-								<a href="https://charlespyo.com/2022/02/25/web3-서비스-맛집-체인파트너스-인재채용/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-chain_partners.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-wayplus.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">(주)웨이플러스</strong>
-								<a href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42858806&view_type=search" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-wayplus.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-planetarium.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">플라네타리움</strong>
-								<p class="para">
-									커리어에 다운사이징은 없습니다. Web3 산업에서 커리어를 업사이징하세요.
-								</p>
-								<a href="https://recruit.planetariumhq.com/" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-planetarium.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-korbit.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">코빗</strong>
-								<a href="https://www.wanted.co.kr/wd/33105" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-korbit.png" alt="QR 코드">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/recruit/logo-somoon.png" alt="">
-							<div class="session-info">
-								<strong class="session-title">소문</strong>
-								<a href="https://linktr.ee/somoon.io?utm_source=linktree_profile_share&ltsid=7ff8ccd4-82e1-44e0-a6d3-012d871158af" target="_blank">채용 공고 바로가기</a>
-							</div>
-						</td>
-						<td class="qr">
-							<img src="images/recruit/qr-somoon.png" alt="QR 코드">
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<button type="button" class="apply-link view-detail">채용 공고 확인하기</button>
-		</section>
-		<section class="scroll-top">
-			<h2 class="sr-only">스크롤 탑 버튼</h2>
-			<button type="button">
-				<span class="sr-only">버튼을 누르면 최상위로 이동합니다.</span>
-				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M12.35 25.6833L20 18.0499L27.65 25.6833L30 23.3333L20 13.3333L10 23.3333L12.35 25.6833Z" fill="#C4C4C4" class="scroll-top-img"/>
-				</svg>
-			</button>
-		</section>
-		<section class="sticker-section active">
-			<h2 class="sr-only">스티커 관련 공지</h2>
-			<div class="wrap">
-				<div class="info-img">
-					<img src="images/recruit/recruit-info.png" alt="제주 웹 컨퍼런스에서 스티커 나눔해요! 스티커, 엽서 포스터 등 기업 굿즈 나눔을 환영합니다!">
-				</div>
-				<button type="button" class="close-modal">오케이! 좋아요!</button>
-			</div>
-		</section>
-	</div>
-	<canvas class="canvas"></canvas>
-	<script src="./javascript/main.js"></script>
-</body>
+      <section class="section recruit">
+        <h2 class="section-title">기업 채용</h2>
+        <ul class="notice-list">
+          <li class="notice-item notice-mail">
+            <p class="para">
+              채용을 희망하는 기업의 채용 공고 QR을 게시하고 있습니다. 게시를
+              희망하는 기업은 메일로 연락 부탁드립니다.
+              <small>(문의 메일 : paul-lab@naver.com)</small>
+            </p>
+          </li>
+          <li class="notice-item notice-qr">
+            <p class="para">
+              채용 공고 QR은 아래 버튼을 클릭하면 확인할 수 있습니다.
+            </p>
+          </li>
+        </ul>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>기업</th>
+              <th>QR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-upstage.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">업스테이지</strong>
+                  <a href="https://www.upstage.ai/careers" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-upstage.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-pentaworks.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">펜타웍스</strong>
+                  <a href="http://naver.me/FPurQVzB" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-pentaworks.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-nspace.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">앤스페이스</strong>
+                  <a href="http://nspace.co/career" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-nspace.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-krust.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">크러스트 유니버스</strong>
+                  <a href="https://krust-universe.breezy.hr/" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-krust.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-youha.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">유하</strong>
+                  <a href="https://tech.youha.info/" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-youha.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-weeat.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">위잇딜라이트(위허들링)</strong>
+                  <p class="para">
+                    공고에는 3년차 이상이라고 기재되어 있지만, 최소한의 기술적인
+                    역량만 보유하고 있다면 연차는 크게 개의치 않습니다.
+                  </p>
+                  <a href="https://bit.ly/weeatdevelop" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-weeat.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-angel_trippy.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">엔젤리그</strong>
+                  <a href="https://www.wanted.co.kr/wd/53012" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-angel_trippy.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-wondervari.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">원더베리</strong>
+                  <a href="https://blog.hummit.co/채용/" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-wondervari.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-ymjlab.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">요망진연구소</strong>
+                  <a
+                    href="https://www.jobkorea.co.kr/Recruit/GI_Read/38372706"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-ymjlab.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-frip.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title"
+                    >프렌트립(Frip 서비스 운영)</strong
+                  >
+                  <a href="https://careers.frip.co.kr/" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-frip.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-dk.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">디케이테크인</strong>
+                  <a
+                    href="https://dktechin-tso.notion.site/dktechin-tso/dk-techin-7b43608d19e44b718229515a87f94ffa"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-dk.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-jaranda.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">자란다</strong>
+                  <a href="https://team.jaranda.kr/front" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-jaranda.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-clo.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">CLO Virtual Fashion</strong>
+                  <a
+                    href="https://jobs.lever.co/clovirtualfashion/f6e3d792-c0b8-4235-822c-4bbaad5fdb92"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-clo.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-kaflix.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">캐플릭스</strong>
+                  <a href="https://www.kaflix.com/recruit" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-kaflix.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-mfgarden.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">맘꽃가든</strong>
+                  <a
+                    href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42770174&view_type=etc"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-mfgarden.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-modulabs.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">모두의연구소</strong>
+                  <a href="https://modulabs.oopy.io/recruit" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-modulabs.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-evlab.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">전기차평가연구소</strong>
+                  <a
+                    href="https://www.rocketpunch.com/jobs/126337"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-evlab.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-chain_partners.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">체인파트너스</strong>
+                  <a
+                    href="https://charlespyo.com/2022/02/25/web3-서비스-맛집-체인파트너스-인재채용/"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-chain_partners.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-wayplus.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">(주)웨이플러스</strong>
+                  <a
+                    href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42858806&view_type=search"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-wayplus.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-planetarium.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">플라네타리움</strong>
+                  <p class="para">
+                    커리어에 다운사이징은 없습니다. Web3 산업에서 커리어를
+                    업사이징하세요.
+                  </p>
+                  <a href="https://recruit.planetariumhq.com/" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-planetarium.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-korbit.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">코빗</strong>
+                  <a href="https://www.wanted.co.kr/wd/33105" target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-korbit.png" alt="QR 코드" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/recruit/logo-somoon.png" alt="" />
+                <div class="session-info">
+                  <strong class="session-title">소문</strong>
+                  <a
+                    href="https://linktr.ee/somoon.io?utm_source=linktree_profile_share&ltsid=7ff8ccd4-82e1-44e0-a6d3-012d871158af"
+                    target="_blank"
+                    >채용 공고 바로가기</a
+                  >
+                </div>
+              </td>
+              <td class="qr">
+                <img src="images/recruit/qr-somoon.png" alt="QR 코드" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="apply-link view-detail">
+          채용 공고 확인하기
+        </button>
+      </section>
+      <section class="scroll-top">
+        <h2 class="sr-only">스크롤 탑 버튼</h2>
+        <button type="button">
+          <span class="sr-only">버튼을 누르면 최상위로 이동합니다.</span>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.35 25.6833L20 18.0499L27.65 25.6833L30 23.3333L20 13.3333L10 23.3333L12.35 25.6833Z"
+              fill="#C4C4C4"
+              class="scroll-top-img"
+            />
+          </svg>
+        </button>
+      </section>
+      <section class="sticker-section active">
+        <h2 class="sr-only">스티커 관련 공지</h2>
+        <div class="wrap">
+          <div class="info-img">
+            <img
+              src="images/recruit/recruit-info.png"
+              alt="제주 웹 컨퍼런스에서 스티커 나눔해요! 스티커, 엽서 포스터 등 기업 굿즈 나눔을 환영합니다!"
+            />
+          </div>
+          <button type="button" class="close-modal">오케이! 좋아요!</button>
+        </div>
+      </section>
+    </div>
+    <canvas class="canvas"></canvas>
+    <script src="./javascript/main.js"></script>
+  </body>
 </html>
