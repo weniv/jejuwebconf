@@ -12,7 +12,7 @@
   --fontMain: #121314;
   --fontGray: #47494d;
   --fontLightGray: #8d9299;
-  --point: #bcdbff;
+  /* --point: #bcdbff; */
   --bgColor: #f3f5fa;
   --borderColor: #d9dbe0;
 }
@@ -71,7 +71,7 @@ a {
 
 .section {
   min-height: 30vh;
-  margin-bottom: 2.5em;
+  margin-bottom: 4rem;
   padding: 4rem;
   line-height: 1.4;
   background: #fff;
@@ -182,7 +182,7 @@ a {
   display: block;
   background: var(--mainLightColor);
   border-radius: 10px;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   height: 2.57em;
   font-weight: 700;
 }
@@ -241,20 +241,22 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 15%;
+  font-size: 1.4rem;
   text-align: center;
   padding: 0 0.625em;
 }
 
 .session-title {
   display: block;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  /* line-height: 1.4; */
   word-break: break-all;
   margin-bottom: 8px;
 }
 
 .profile-name {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: var(--fontLightGray);
 }
 
@@ -304,27 +306,27 @@ a {
 
 .team .profile-name {
   display: block;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-size: 1.6rem;
   margin-bottom: 8px;
   font-weight: 900;
   color: var(--fontMain);
 }
 
 .team .profile-name small {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: var(--fontLightGray);
   margin-left: 5px;
 }
 
 .team .profile-role {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 .team .profile-desc {
   margin-top: 10px;
   color: var(--fontGray);
-  font-size: 0.875rem;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 .team .profile-desc a {
