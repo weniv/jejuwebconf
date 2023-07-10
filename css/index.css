@@ -1,7 +1,6 @@
 @font-face {
   font-family: "CookieRunOTF-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -292,6 +291,7 @@ a {
   width: 90%;
 }
 
+/* team : 운영팀 */
 .team .session-item {
   display: flex;
 }
@@ -342,10 +342,7 @@ a {
   font-weight: 600;
 }
 
-.session-info {
-  margin-left: 18px;
-}
-
+/* faq */
 .notice-list .notice-item {
   display: flex;
   align-items: flex-start;
@@ -435,6 +432,7 @@ a {
   border-radius: 0;
 }
 
+/* etc */
 .scroll-top {
   position: fixed;
   bottom: 20px;
@@ -469,6 +467,7 @@ a {
   fill: #767676;
 }
 
+/* 
 .sticker-section {
   display: none;
   position: fixed;
@@ -505,8 +504,9 @@ a {
   color: var(--fontMain);
   font-weight: 700;
   cursor: pointer;
-}
+} */
 
+/* mobile */
 @media (max-width: 1024px) {
   .management-list li {
     width: 8em;
