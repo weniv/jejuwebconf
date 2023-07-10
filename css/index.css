@@ -79,12 +79,13 @@ a {
   border-radius: 2rem;
 }
 
+/* 본 콘텐츠 */
 .section-title {
   font-size: 3.6rem;
   font-weight: 700;
   color: var(--mainColor);
   text-align: center;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3.4rem;
 }
 
 .section-title span {
@@ -114,7 +115,7 @@ a {
   color: var(--fontGray);
 }
 
-/* intro */
+/* intro : 컨퍼런스 소개 */
 .intro {
   padding: 5rem 8rem 4rem;
 }
@@ -150,6 +151,10 @@ a {
   word-spacing: 1rem;
 }
 
+.conf-summary a {
+  text-underline-position: under;
+}
+
 .management-list {
   display: flex;
   justify-content: center;
@@ -161,31 +166,29 @@ a {
   width: 10em;
 }
 
-/* section-item */
+/* section-item : 컨퍼런스 타임 테이블 */
 .session-item {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
+
 .session-item:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
+
 .session-table {
   width: 100%;
   color: var(--fontMain);
 }
-.recruit .session-table {
-  display: none;
-}
-.session-active .session-table {
-  display: table;
-}
+
 .session-table thead {
   display: block;
-  background: var(--mainLightColor);
-  border-radius: 10px;
+  height: 3.6rem;
   font-size: 1.4rem;
-  height: 2.57em;
   font-weight: 700;
+  border-radius: 10px;
+  background: var(--mainLightColor);
 }
+
 .session-table thead tr {
   display: flex;
   align-items: center;
@@ -193,10 +196,11 @@ a {
   width: 100%;
   height: 100%;
 }
+
 .session-table th {
   display: block;
   height: 100%;
-  padding-top: 0.78em;
+  padding: 1rem 0;
   box-sizing: border-box;
 }
 
@@ -216,9 +220,9 @@ a {
 }
 
 .session-table tbody img {
-  width: 5em;
-  height: 5em;
-  border-radius: 1.25rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 2rem;
 }
 
 .session-table tbody img.default {
@@ -232,27 +236,31 @@ a {
 
 .session-table td:first-child {
   width: 85%;
-  padding: 16px 10px;
+  padding: 1.6rem 1rem;
   font-weight: 700;
   border-right: 1px solid var(--borderColor);
 }
 
 .session-table td:last-child {
+  width: 15%;
   flex-direction: column;
   justify-content: center;
-  width: 15%;
+  padding: 1rem 2rem;
   font-size: 1.4rem;
   text-align: center;
-  padding: 0 0.625em;
+}
+
+.session-info {
+  margin-left: 1.8rem;
+  padding: 1rem 0;
 }
 
 .session-title {
   display: block;
   font-size: 1.6rem;
   line-height: 2.2rem;
-  /* line-height: 1.4; */
   word-break: break-all;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .profile-name {
@@ -263,7 +271,7 @@ a {
 .notice-message {
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 1.2rem;
   background-color: var(--mainLightColor);
   border-radius: 10px;
   color: var(--fontMain);
@@ -273,11 +281,11 @@ a {
 .notice-message::before {
   content: "";
   display: block;
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   border-radius: 10px;
-  background: #fff url(../images/icon-notice.svg) no-repeat center / 20px 20px;
-  margin-right: 13px;
+  background: #fff url(../images/icon-notice.svg) no-repeat center / 2rem 2rem;
+  margin-right: 1.3rem;
 }
 
 .notice-message p {
