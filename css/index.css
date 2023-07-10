@@ -125,7 +125,7 @@ a {
 
 .apply-link {
   display: block;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
   padding: 1.4rem;
   font-weight: 700;
   font-size: 1.6rem;
