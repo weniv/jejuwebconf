@@ -176,4 +176,18 @@
 
     scrollTop && window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   });
+
+  // 2023 faq 추가
+  function activeTab(e) {
+    const tabId = e.target.id;
+    const targetAnswer = document.querySelector(`#answer${tabId}`);
+
+    e.target.classList.toggle('active');
+    targetAnswer.classList.toggle('active');
+  }
+
+  const faqBtn = document.querySelectorAll('.faq-button');
+  for (const i of faqBtn) {
+    i.addEventListener('click', activeTab);
+  }
 })();
