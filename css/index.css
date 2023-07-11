@@ -382,6 +382,7 @@ a {
   font-weight: 400;
 }
 
+.faq .question,
 .faq .answer.active {
   display: flex
 }
