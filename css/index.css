@@ -403,11 +403,11 @@ a {
   right: 2rem;
   width: 2rem;
   height: 2rem;
-  background: url(../images/icon-arrow-up.svg) no-repeat center;
+  background: url(../images/icon-arrow-down.svg) no-repeat center;
 }
 
 .faq-button.active {
-  background-image: url(../images/icon-arrow-down.svg);
+  background-image: url(../images/icon-arrow-up.svg);
 }
 
 /* etc */
