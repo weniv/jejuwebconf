@@ -157,14 +157,17 @@ a {
 }
 
 .management-list {
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem 2.5rem;
 }
 
 .management-list li {
   width: 10em;
+  flex-shrink: 1;
+  text-align: center;
 }
 
 /* section-item : 컨퍼런스 타임 테이블 */
@@ -486,8 +489,11 @@ a {
 
 /* mobile */
 @media (max-width: 1024px) {
+  .management-list{
+    flex-wrap: wrap;
+  }
   .management-list li {
-    width: 8em;
+    width: 7.5em;
   }
 }
 
@@ -507,7 +513,7 @@ a {
     border-radius: 2rem;
   }
   .management-list li {
-    width: 7.5em;
+    width: 5.5em;
   }
 }
 
