@@ -1,18 +1,17 @@
 @font-face {
   font-family: "CookieRunOTF-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --mainColor: #ed7a3a;
-  --mainLightColor: #fff8ea;
+  --mainColor: #43b149;
   --fontMain: #121314;
   --fontGray: #47494d;
   --fontLightGray: #8d9299;
-  /* --point: #bcdbff; */
-  --bgColor: #f3f5fa;
+  --bgColor: #f2f2f2;
   --borderColor: #d9dbe0;
 }
 
@@ -24,7 +23,7 @@ body {
   font-size: 1.6rem;
   font-family: NanumSquare, "Apple SD Gothic Neo", "Roboto", "Noto Sans KR",
     NanumGothic, "Malgun Gothic", sans-serif;
-  background-color: var(--mainLightColor);
+  background-color: var(--bgColor);
   color: var(--fontMain);
 }
 
@@ -67,7 +66,6 @@ img {
 a {
   color: var(--fontMain);
   text-underline-position: under;
-  
 }
 
 .section {
@@ -160,7 +158,7 @@ a {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   gap: 1rem 2.5rem;
 }
 
@@ -170,15 +168,7 @@ a {
   text-align: center;
 }
 
-/* section-item : 컨퍼런스 타임 테이블 */
-.session-item {
-  margin-bottom: 2rem;
-}
-
-.session-item:last-child {
-  margin-bottom: 3rem;
-}
-
+/* session-table : 컨퍼런스 타임 테이블 */
 .session-table {
   width: 100%;
   color: var(--fontMain);
@@ -190,7 +180,7 @@ a {
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: 1rem;
-  background: var(--mainLightColor);
+  background: var(--bgColor);
 }
 
 .session-table thead tr {
@@ -220,7 +210,6 @@ a {
 
 .session-table tbody tr {
   display: flex;
-  border-bottom: 1px solid var(--borderColor);
 }
 
 .session-table tbody img {
@@ -277,7 +266,7 @@ a {
   display: flex;
   align-items: center;
   padding: 1.2rem;
-  background-color: var(--mainLightColor);
+  background-color: var(--bgColor);
   border-radius: 1rem;
   color: var(--fontMain);
   font-weight: 400;
@@ -359,17 +348,17 @@ a {
   font-weight: 700;
 }
 
-.faq .notice-item div{
+.faq .notice-item div {
   width: 100%;
 }
 
-.faq .notice-item:not(:first-child){
+.faq .notice-item:not(:first-child) {
   margin-top: 1.5rem;
 }
 
 .faq .question::before {
   margin: 0 2rem 0 0.5rem;
-  content: 'Q';
+  content: "Q";
   width: 1rem;
   height: 1rem;
   color: var(--mainColor);
@@ -387,13 +376,13 @@ a {
 
 .faq .question,
 .faq .answer.active {
-  display: flex
+  display: flex;
 }
 
 .faq .answer::before {
   display: block;
   margin: 0 2rem 0 0.5rem;
-  content: 'A';
+  content: "A";
   width: 1rem;
   height: 1rem;
   color: var(--fontLightGray);
@@ -489,7 +478,7 @@ a {
 
 /* mobile */
 @media (max-width: 1024px) {
-  .management-list{
+  .management-list {
     flex-wrap: wrap;
   }
   .management-list li {
