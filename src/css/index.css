@@ -69,7 +69,6 @@ a {
 }
 
 .section {
-  min-height: 30vh;
   margin-bottom: 4rem;
   padding: 4rem;
   line-height: 1.4;
@@ -116,7 +115,7 @@ a {
 
 /* intro : 컨퍼런스 소개 */
 .intro {
-  padding: 5rem 8rem 4rem;
+  padding: 5rem 8rem 3.4rem;
 }
 
 .intro h2 img {
@@ -168,80 +167,129 @@ a {
   text-align: center;
 }
 
-/* session-table : 컨퍼런스 타임 테이블 */
-.session-table {
-  width: 100%;
-  color: var(--fontMain);
+/* notice-list: 모집 안내 */
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  li {
+    display: flex;
+  }
+
+  h3 {
+    width: 8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--mainColor);
+  }
 }
 
-.session-table thead {
-  display: block;
+.note-list > li {
+  display: flex;
+  gap: 0.5rem;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: var(--fontMain);
+    border-radius: 50%;
+    margin: 0.8rem 0 0 0;
+  }
+}
+
+/* session-section: 컨퍼런스 타임 테이블 */
+.session-section .section-title {
+  margin-bottom: 1rem;
+}
+
+.session-date {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--fontGray);
+  text-align: center;
+}
+
+.session-button-list {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.session-button {
+  padding: 1rem 1.6rem;
+  border-radius: 5rem;
+  border: 1px solid var(--fontMain);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+
+  &.active {
+    background-color: var(--fontMain);
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+.session-card .session-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   height: 3.6rem;
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: 1rem;
   background: var(--bgColor);
+
+  p {
+    text-align: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+
+    &:first-of-type {
+      width: 85%;
+      border-right: 1px solid #fff;
+    }
+
+    &:last-of-type {
+      margin-left: auto;
+      width: 15%;
+    }
+  }
 }
 
-.session-table thead tr {
+.session-content {
   display: flex;
   align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+
+  .content {
+    display: flex;
+    width: 85%;
+    padding: 1.6rem 1rem;
+    box-sizing: border-box;
+    border-right: 1px solid var(--bgColor);
+
+    &.notice {
+      justify-content: center;
+    }
+  }
 }
 
-.session-table th {
-  display: block;
-  height: 100%;
-  padding: 1rem 0;
-  box-sizing: border-box;
-}
-
-.session-table th:first-child {
-  width: 85%;
-  border-right: 1px solid #fff;
-}
-
-.session-table th:last-child {
-  width: 15%;
-  text-align: center;
-}
-
-.session-table tbody tr {
-  display: flex;
-}
-
-.session-table tbody img {
+.session-image {
   margin: auto 0;
   width: 8rem;
   height: 8rem;
   border-radius: 2rem;
-}
-
-.session-table tbody img.default {
-  border: 1px solid var(--mainColor);
-}
-
-.session-table td {
-  display: flex;
-  box-sizing: border-box;
-}
-
-.session-table td:first-child {
-  width: 85%;
-  padding: 1.6rem 1rem;
-  font-weight: 700;
-  border-right: 1px solid var(--borderColor);
-}
-
-.session-table td:last-child {
-  width: 15%;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 1rem;
-  font-size: 1.4rem;
-  text-align: center;
 }
 
 .session-info {
@@ -251,15 +299,33 @@ a {
 
 .session-title {
   display: block;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
   word-break: break-all;
   margin-bottom: 0.8rem;
 }
 
-.profile-name {
+.session-speaker {
+  display: flex;
+  gap: 0.5rem;
   font-size: 1.4rem;
+  font-weight: 700;
   color: var(--fontLightGray);
+}
+
+.speaker-company:not(:empty) {
+  display: flex;
+  gap: 0.5rem;
+
+  &::before {
+    content: "|";
+  }
+}
+
+.session-location {
+  width: 15%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .notice-message {
@@ -338,22 +404,26 @@ a {
 }
 
 /* faq */
-.faq .notice-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  position: relative;
+.faq .faq-item {
   border: 1px solid var(--borderColor);
   border-radius: 1rem;
-  font-weight: 700;
 }
 
-.faq .notice-item div {
-  width: 100%;
+.faq .faq-item.active .answer {
+  display: flex;
 }
 
-.faq .notice-item:not(:first-child) {
+.faq .faq-item:not(:first-child) {
   margin-top: 1.5rem;
+}
+
+.faq .question {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 700;
+  box-sizing: border-box;
 }
 
 .faq .question::before {
@@ -367,16 +437,10 @@ a {
 
 .faq .answer {
   display: none;
-  margin-top: 1.4rem;
-  width: 95%;
   word-break: break-all;
   color: var(--fontLightGray);
   font-weight: 400;
-}
-
-.faq .question,
-.faq .answer.active {
-  display: flex;
+  padding: 0 2rem 2rem;
 }
 
 .faq .answer::before {
@@ -389,17 +453,19 @@ a {
   font-weight: 800;
 }
 
-.faq-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+.faq .arrow-item {
+  display: block;
   width: 2rem;
   height: 2rem;
-  background: url(../images/icon-arrow-down.svg) no-repeat center;
+  margin-left: auto;
 }
 
-.faq-button.active {
-  background-image: url(../images/icon-arrow-up.svg);
+.faq .faq-item.active .arrow-item > svg {
+  transform: rotate(180deg);
+
+  path {
+    fill: var(--mainColor);
+  }
 }
 
 /* etc */

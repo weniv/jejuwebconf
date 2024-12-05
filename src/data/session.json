@@ -1,0 +1,136 @@
+{
+  "day1": {
+    "data": "2024.12.20(금)",
+    "session": [
+      {
+        "type": "session",
+        "time": "12:00 ~ 12:50",
+        "location": "라운지",
+        "title": "Conference 안내 및 등록, 오프닝",
+        "speaker": "제주 웹 컨퍼런스",
+        "company": "",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
+      },
+      {
+        "type": "session",
+        "time": "13:00 ~ 13:50",
+        "location": "트랙룸",
+        "title": "AI 어디까지 알아보고 왔니",
+        "speaker": "이진명",
+        "company": "",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
+      },
+      {
+        "type": "session",
+        "time": "14:00 ~ 14:50",
+        "location": "트랙룸",
+        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
+        "speaker": "장동수",
+        "company": "수수한기술",
+        "profile_image": "/src/images/profile/iolo.png",
+        "alt_text": "장동수 프로필"
+      },
+      {
+        "type": "notice",
+        "time": "14:50 ~ 15:00",
+        "location": "라운지",
+        "title": "전체 사진 촬영"
+      },
+      {
+        "type": "session",
+        "time": "15:00 ~ 15:50",
+        "location": "트랙룸",
+        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
+        "speaker": "장동수",
+        "company": "수수한기술",
+        "profile_image": "/src/images/profile/iolo.png",
+        "alt_text": "장동수 프로필"
+      },
+      {
+        "type": "session",
+        "time": "16:00 ~ 16:50",
+        "location": "트랙룸",
+        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
+        "speaker": "장동수",
+        "company": "수수한기술",
+        "profile_image": "/src/images/profile/iolo.png",
+        "alt_text": "장동수 프로필"
+      },
+      {
+        "type": "session",
+        "time": "17:00 ~ 17:50",
+        "location": "트랙룸",
+        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
+        "speaker": "장동수",
+        "company": "수수한기술",
+        "profile_image": "/src/images/profile/iolo.png",
+        "alt_text": "장동수 프로필"
+      },
+      {
+        "type": "notice",
+        "time": "18:10 ~ 18:20",
+        "location": "라운지",
+        "title": "경품 추첨"
+      }
+    ]
+  },
+  "day2": {
+    "data": "2024.12.21(토)",
+    "session": [
+      {
+        "type": "session",
+        "time": "12:00 ~ 12:50",
+        "location": "라운지",
+        "title": "Conference 안내 및 등록, 오프닝",
+        "speaker": "제주 웹 컨퍼런스",
+        "company": "",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
+      },
+      {
+        "type": "session",
+        "time": "13:00 ~ 14:50",
+        "location": "트랙룸",
+        "title": "장고로 15분 만에 LLM 웹 채팅 에이전트 찍어내기",
+        "speaker": "이진석",
+        "company": "파이썬사랑방",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": "이진석 프로필"
+      },
+      {
+        "type": "notice",
+        "time": "14:50 ~ 15:00",
+        "location": "라운지",
+        "title": "전체 사진 촬영"
+      },
+      {
+        "type": "session",
+        "time": "15:00 ~ 15:50",
+        "location": "트랙룸",
+        "title": "Tech for Impact: AI를 활용한 제주남방큰돌고래 서식지 보호 웹 솔루션",
+        "speaker": "한서우",
+        "company": "B GARAGE ",
+        "profile_image": "/src/images/profile/hanseowoo.jpeg",
+        "alt_text": "한서우 프로필"
+      },
+      {
+        "type": "session",
+        "time": "16:00 ~ 17:50",
+        "location": "트랙룸",
+        "title": "미정",
+        "speaker": "김태훈",
+        "company": "넥슨코리아",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
+      },
+      {
+        "type": "notice",
+        "time": "18:10 ~ 18:20",
+        "location": "라운지",
+        "title": "경품 추첨"
+      }
+    ]
+  }
+}
