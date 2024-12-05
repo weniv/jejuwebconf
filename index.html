@@ -177,6 +177,12 @@
           </li>
           <li class="management-item">
             <img
+              src="/src/images/logo-manage4.svg"
+              alt="제주산학융합지구사업단"
+            />
+          </li>
+          <li class="management-item">
+            <img
               src="/src/images/logo-ccei.png"
               alt="(재)제주창조경제혁신센터"
             />
@@ -276,9 +282,9 @@
         </ul>
       </section> -->
       <!-- place -->
-      <section class="section place">
+      <!-- <section class="section place">
         <h2 class="section-title">찾아오시는 길</h2>
-      </section>
+      </section> -->
       <!-- FAQ -->
       <section class="section faq">
         <h2 class="section-title">FAQ<span>자주 묻는 질문</span></h2>
@@ -317,5 +323,45 @@
     <script src="/src/javascript/main.js"></script>
     <script src="/src/javascript/session.js"></script>
     <script src="/src/javascript/faq.js"></script>
+    <script>
+      (function () {
+        var w = window;
+        if (w.ChannelIO) {
+          return w.console.error("ChannelIO script included twice.");
+        }
+        var ch = function () {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function (args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+          var x = document.getElementsByTagName("script")[0];
+          if (x.parentNode) {
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        if (document.readyState === "complete") {
+          l();
+        } else {
+          w.addEventListener("DOMContentLoaded", l);
+          w.addEventListener("load", l);
+        }
+      })();
+
+      ChannelIO("boot", {
+        pluginKey: "ffe1521e-c1cd-4990-b8d2-fdc1b804fb49",
+      });
+    </script>
   </body>
 </html>

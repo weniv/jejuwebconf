@@ -154,6 +154,7 @@ a {
 }
 
 .management-list {
+  width: 100%;
   margin-top: 3rem;
   display: flex;
   justify-content: center;
@@ -162,7 +163,9 @@ a {
 }
 
 .management-list li {
-  width: 10em;
+  display: flex;
+  align-items: center;
+  width: 20%;
   flex-shrink: 1;
   text-align: center;
 }
@@ -547,9 +550,9 @@ a {
   .management-list {
     flex-wrap: wrap;
   }
-  .management-list li {
+  /* .management-list li {
     width: 7.5em;
-  }
+  } */
 }
 
 @media (max-width: 769px) {
