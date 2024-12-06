@@ -240,6 +240,10 @@ a {
   }
 }
 
+.session-card:last-of-type {
+  border-bottom: 1px solid var(--bgColor);
+}
+
 .session-card .session-header {
   display: flex;
   align-items: center;
@@ -312,6 +316,10 @@ a {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--fontLightGray);
+
+  strong {
+    flex-shrink: 0;
+  }
 }
 
 .speaker-company:not(:empty) {

@@ -16,9 +16,9 @@
         "type": "session",
         "time": "13:00 ~ 13:50",
         "location": "트랙룸",
-        "title": "AI 어디까지 알아보고 왔니",
-        "speaker": "이진명",
-        "company": "",
+        "title": "미정",
+        "speaker": "변종기",
+        "company": "맘꽃가든 대표",
         "profile_image": "/src/images/profile/default.svg",
         "alt_text": ""
       },
@@ -28,7 +28,7 @@
         "location": "트랙룸",
         "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
         "speaker": "장동수",
-        "company": "수수한기술",
+        "company": "수수한기술 대표",
         "profile_image": "/src/images/profile/iolo.png",
         "alt_text": "장동수 프로필"
       },
@@ -42,31 +42,31 @@
         "type": "session",
         "time": "15:00 ~ 15:50",
         "location": "트랙룸",
-        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
-        "speaker": "장동수",
-        "company": "수수한기술",
-        "profile_image": "/src/images/profile/iolo.png",
-        "alt_text": "장동수 프로필"
+        "title": "미정",
+        "speaker": "미정",
+        "company": "",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
       },
       {
         "type": "session",
         "time": "16:00 ~ 16:50",
         "location": "트랙룸",
-        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
-        "speaker": "장동수",
-        "company": "수수한기술",
-        "profile_image": "/src/images/profile/iolo.png",
-        "alt_text": "장동수 프로필"
+        "title": "미정",
+        "speaker": "강창훈",
+        "company": "엠소프트웨어 대표",
+        "profile_image": "/src/images/profile/default.svg",
+        "alt_text": ""
       },
       {
         "type": "session",
         "time": "17:00 ~ 17:50",
         "location": "트랙룸",
-        "title": "고전적인 기술로 현대적인 웹앱 만들기 : HTMX",
-        "speaker": "장동수",
-        "company": "수수한기술",
-        "profile_image": "/src/images/profile/iolo.png",
-        "alt_text": "장동수 프로필"
+        "title": "AI, 어디까지 알아봤니? AI로 게임 만들기!",
+        "speaker": "이진명",
+        "company": "크래프톤 클라이언트 프로그래밍",
+        "profile_image": "/src/images/profile/leejinmyeong.png",
+        "alt_text": ""
       },
       {
         "type": "notice",
@@ -96,7 +96,7 @@
         "title": "장고로 15분 만에 LLM 웹 채팅 에이전트 찍어내기",
         "speaker": "이진석",
         "company": "파이썬사랑방",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/leejinseok.png",
         "alt_text": "이진석 프로필"
       },
       {
@@ -111,7 +111,7 @@
         "location": "트랙룸",
         "title": "Tech for Impact: AI를 활용한 제주남방큰돌고래 서식지 보호 웹 솔루션",
         "speaker": "한서우",
-        "company": "B GARAGE ",
+        "company": "B GARAGE Computer Vision Engineer",
         "profile_image": "/src/images/profile/hanseowoo.jpeg",
         "alt_text": "한서우 프로필"
       },
@@ -119,9 +119,9 @@
         "type": "session",
         "time": "16:00 ~ 17:50",
         "location": "트랙룸",
-        "title": "미정",
+        "title": "코딩 잘하는 개발자 vs. 일 잘하는 개발자",
         "speaker": "김태훈",
-        "company": "넥슨코리아",
+        "company": "넥슨코리아 프론트웹개발팀 팀장",
         "profile_image": "/src/images/profile/default.svg",
         "alt_text": ""
       },
