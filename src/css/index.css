@@ -482,8 +482,8 @@ a {
 /* etc */
 .scroll-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 96px;
+  right: 26px;
   z-index: 999;
   transition: bottom 0.3s;
   display: none;
