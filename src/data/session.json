@@ -16,7 +16,7 @@
         "type": "session",
         "time": "13:00 ~ 13:50",
         "location": "트랙룸",
-        "title": "미정",
+        "title": "제주형 스마트팜 웹서비스 구축 및 전국 서비스 확장 전략",
         "speaker": "변종기",
         "company": "맘꽃가든 대표",
         "profile_image": "/src/images/profile/default.svg",
@@ -42,11 +42,11 @@
         "type": "session",
         "time": "15:00 ~ 15:50",
         "location": "트랙룸",
-        "title": "미정",
-        "speaker": "미정",
-        "company": "",
-        "profile_image": "/src/images/profile/default.svg",
-        "alt_text": ""
+        "title": "LLM을 이용한 서비스 구축",
+        "speaker": "이호준",
+        "company": "위니브 대표",
+        "profile_image": "/src/images/profile/profile_leehojun.png",
+        "alt_text": "이호준 프로필"
       },
       {
         "type": "session",
