@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 (function () {
   function getTarget(elem, className) {
     for (; !elem.classList.contains(className); )
-      if (((elem = elem.parentNode), 'BODY' == elem.nodeName))
+      if (((elem = elem.parentNode), "BODY" == elem.nodeName))
         return void (elem = null);
     return elem;
   }
@@ -25,13 +25,13 @@
         ) {
           var _particle = {
             color:
-              'rgb(' +
+              "rgb(" +
               imgData.data[4 * x * scale + 4 * y * scale * imgData.width] +
-              ', ' +
+              ", " +
               imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 1] +
-              ', ' +
+              ", " +
               imgData.data[4 * x * scale + 4 * y * scale * imgData.width + 2] +
-              ')',
+              ")",
             x: x + imgX / scale,
             y: y + imgY / scale,
             originX: x + imgX / scale,
@@ -48,8 +48,8 @@
   function setSize() {
     scale = Math.floor(window.devicePixelRatio);
 
-    canvas.style.width = innerWidth + 'px';
-    canvas.style.height = innerHeight + 'px';
+    canvas.style.width = innerWidth + "px";
+    canvas.style.height = innerHeight + "px";
 
     canvas.width = Math.floor(innerWidth * scale);
     canvas.height = Math.floor(innerHeight * scale);
@@ -67,7 +67,7 @@
     imgX = innerWidth / 2 - imgWidth / 2;
     imgY = 0.24 * imgHeight;
 
-    allElem.style.cssText = 'margin-top: ' + (2 * imgY + imgHeight) + 'px;';
+    allElem.style.cssText = "margin-top: " + (2 * imgY + imgHeight) + "px;";
   }
 
   function scrollHandler() {
@@ -93,7 +93,7 @@
         (context.fillStyle = particle.color),
         context.fillRect(particle.x, particle.y, particleSize, particleSize),
         50 < pageYOffset &&
-          ((context.strokeStyle = 'rgb(71, 73, 77)'),
+          ((context.strokeStyle = "rgb(71, 73, 77)"),
           context.strokeRect(
             particle.x,
             particle.y,
@@ -108,19 +108,19 @@
   }
 
   function scrollToTop() {
-    const scrollTopBtn = document.querySelector('.scroll-top');
+    const scrollTopBtn = document.querySelector(".scroll-top");
     let htmlScrollTop = void 0;
 
     scrollTopBtn &&
-      ((htmlScrollTop = document.querySelector('html').scrollTop),
+      ((htmlScrollTop = document.querySelector("html").scrollTop),
       htmlScrollTop > 100
-        ? scrollTopBtn.classList.add('btn-active')
-        : scrollTopBtn.classList.remove('btn-active'));
+        ? scrollTopBtn.classList.add("btn-active")
+        : scrollTopBtn.classList.remove("btn-active"));
   }
 
-  const canvas = document.querySelector('.canvas'),
-    context = canvas.getContext('2d'),
-    allElem = document.querySelector('.all'),
+  const canvas = document.querySelector(".canvas"),
+    context = canvas.getContext("2d"),
+    allElem = document.querySelector(".all"),
     imgElem = new Image();
 
   let imgData = void 0,
@@ -135,59 +135,45 @@
     maxScrollHeight = void 0,
     minParticleSize = void 0;
 
-  imgElem.src = '/images/main-logo.png';
-  imgElem.addEventListener('load', function () {
-    allElem.classList.remove('before-start');
+  imgElem.src = "/src/images/main-illust.png";
+  imgElem.addEventListener("load", function () {
+    allElem.classList.remove("before-start");
     initCanvas();
   });
 
   var particleSize = void 0,
     divValue = 100;
 
-  addEventListener('resize', initCanvas);
-  addEventListener('scroll', function () {
+  addEventListener("resize", initCanvas);
+  addEventListener("scroll", function () {
     scrollHandler();
     scrollToTop();
   });
 
-  allElem.addEventListener('click', function (e) {
+  allElem.addEventListener("click", function (e) {
     const target = e.target,
-      viewDetail = getTarget(target, 'view-detail'),
-      closeStickerModal = getTarget(target, 'close-modal'),
-      scrollTop = getTarget(target, 'scroll-top');
+      viewDetail = getTarget(target, "view-detail"),
+      closeStickerModal = getTarget(target, "close-modal"),
+      scrollTop = getTarget(target, "scroll-top");
 
     let parentElem = void 0;
 
     viewDetail &&
       ((parentElem = viewDetail.parentNode),
-      parentElem.classList.contains('session-active')
-        ? (parentElem.classList.remove('session-active'),
-          (viewDetail.innerHTML = '채용 공고 바로가기'),
+      parentElem.classList.contains("session-active")
+        ? (parentElem.classList.remove("session-active"),
+          (viewDetail.innerHTML = "채용 공고 바로가기"),
           769 > innerWidth &&
             scrollTo(0, parentElem.offsetTop + 0.2 * innerHeight))
-        : (parentElem.classList.add('session-active'),
-          (viewDetail.innerHTML = '접기')));
+        : (parentElem.classList.add("session-active"),
+          (viewDetail.innerHTML = "접기")));
 
     closeStickerModal &&
       ((parentElem = closeStickerModal.parentNode.parentNode),
-      parentElem.classList.contains('active')
-        ? parentElem.classList.remove('active')
-        : '');
+      parentElem.classList.contains("active")
+        ? parentElem.classList.remove("active")
+        : "");
 
-    scrollTop && window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    scrollTop && window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   });
-
-  // 2023 faq 추가
-  function activeTab(e) {
-    const tabId = e.target.id;
-    const targetAnswer = document.querySelector(`#answer${tabId}`);
-
-    e.target.classList.toggle('active');
-    targetAnswer.classList.toggle('active');
-  }
-
-  const faqBtn = document.querySelectorAll('.faq-button');
-  for (const i of faqBtn) {
-    i.addEventListener('click', activeTab);
-  }
 })();
