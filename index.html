@@ -247,50 +247,78 @@
         </button>
       </section>
       <!-- 모달 -->
-      <section class="modal-section">
-        <div class="wrap">
-          <p>“오직 <strong>참가자</strong>만 누릴 수 있는 기회”</p>
-          <h2>경품 추첨 이벤트!</h2>
-          <p>
-            현장 경품 추첨 이벤트에 참여하고 이른 크리스마스 선물을 받아 가세요!
-          </p>
+      <section class="modal-section active">
+        <div class="modal-contents">
+          <header class="modal-header">
+            <p class="modal-sub-title">
+              “오직 <strong>참가자</strong>만 누릴 수 있는 기회”
+            </p>
+            <h2 class="modal-title">
+              <img src="/src/images/prize-title.png" alt="경품 추첨 이벤트!" />
+            </h2>
+            <p>
+              현장 경품 추첨 이벤트에 참여하고 이른 크리스마스 선물을 받아
+              가세요!
+            </p>
+          </header>
           <ul class="prize-list">
-            <li>
+            <li class="prize-item">
               <img src="/src/images/prize1.png" alt="" />
-              <h3>
+              <div class="prize">
                 <span>경품 1</span>
                 <strong>에어팟 프로 2세대 USB-C 타입</strong>
-              </h3>
+              </div>
             </li>
-            <li>
+            <li class="prize-item">
               <img src="/src/images/prize2.png" alt="" />
-              <h3>
+              <div class="prize">
                 <span>경품 2</span>
                 <strong>SONY 노이즈캔슬링 블루투스 무선 헤드폰</strong>
-              </h3>
+              </div>
             </li>
-            <li>
+            <li class="prize-item">
               <img src="/src/images/prize3.png" alt="" />
-              <h3>
+              <div class="prize">
                 <span>경품 3</span>
                 <strong>네스프레소 버츄오 팝 + 캡슐 커피머신 세트</strong>
-              </h3>
+              </div>
             </li>
-            <li>
+            <li class="prize-item">
               <img src="/src/images/prize4.png" alt="" />
-              <h3>
+              <div class="prize">
                 <span>경품 4</span>
                 <strong>로지텍 무선 기계식 키보드 시그니처 K855 TKL</strong>
-              </h3>
+              </div>
             </li>
           </ul>
-          <p>
-            ※ 본 이벤트는 현장에 계신 참가자분들에 한해 참여하실 수 있습니다.<br />
+          <p class="modal-note">
+            <strong
+              >※ 본 이벤트는 현장에 계신 참가자분들에 한해 참여하실 수
+              있습니다.</strong
+            >
             [이벤트 운영 시간: 1,2일 차 18:10 ~ 18:20]
           </p>
-          <a href="https://forms.gle/fDMbkDXPCjx6WTjx6" target="_blank"
+          <a
+            href="https://forms.gle/fDMbkDXPCjx6WTjx6"
+            target="_blank"
+            class="apply-link"
             >참가신청 바로 가기</a
           >
+          <button type="button" class="close-modal">
+            <span class="sr-only">팝업창 닫기</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+            >
+              <path
+                d="M7.74266 6.25754C7.33261 5.84749 6.66778 5.84749 6.25773 6.25754C5.84768 6.66759 5.84768 7.33241 6.25773 7.74246L12.5153 14L6.25773 20.2575C5.84768 20.6676 5.84768 21.3324 6.25773 21.7425C6.66778 22.1525 7.33261 22.1525 7.74266 21.7425L14.0002 15.4849L20.117 21.6018C20.5271 22.0118 21.1919 22.0118 21.602 21.6018C22.012 21.1917 22.012 20.5269 21.602 20.1168L15.4851 14L21.6019 7.88317C22.012 7.47312 22.012 6.8083 21.6019 6.39825C21.1919 5.9882 20.5271 5.9882 20.117 6.39825L14.0002 12.5151L7.74266 6.25754Z"
+                fill="#8D9299"
+              />
+            </svg>
+          </button>
         </div>
       </section>
     </div>
@@ -298,6 +326,7 @@
     <script src="/src/javascript/main.js"></script>
     <script src="/src/javascript/session.js"></script>
     <script src="/src/javascript/faq.js"></script>
+    <script src="/src/javascript/modal.js"></script>
     <script>
       (function () {
         var w = window;

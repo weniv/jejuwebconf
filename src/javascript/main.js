@@ -152,27 +152,7 @@
 
   allElem.addEventListener("click", function (e) {
     const target = e.target,
-      viewDetail = getTarget(target, "view-detail"),
-      closeStickerModal = getTarget(target, "close-modal"),
       scrollTop = getTarget(target, "scroll-top");
-
-    let parentElem = void 0;
-
-    viewDetail &&
-      ((parentElem = viewDetail.parentNode),
-      parentElem.classList.contains("session-active")
-        ? (parentElem.classList.remove("session-active"),
-          (viewDetail.innerHTML = "채용 공고 바로가기"),
-          769 > innerWidth &&
-            scrollTo(0, parentElem.offsetTop + 0.2 * innerHeight))
-        : (parentElem.classList.add("session-active"),
-          (viewDetail.innerHTML = "접기")));
-
-    closeStickerModal &&
-      ((parentElem = closeStickerModal.parentNode.parentNode),
-      parentElem.classList.contains("active")
-        ? parentElem.classList.remove("active")
-        : "");
 
     scrollTop && window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   });
