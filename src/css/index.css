@@ -578,13 +578,17 @@ a {
   font-weight: 700;
 }
 
-.modal-header .modal-title {
+.modal-title {
   aspect-ratio: 342 / 57;
   max-width: 34.2rem;
 
   img {
     object-fit: cover;
   }
+}
+
+.modal-sub-title strong {
+  text-emphasis: filled #fff;
 }
 
 .prize-list {
