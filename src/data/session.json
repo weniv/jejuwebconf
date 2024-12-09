@@ -19,7 +19,7 @@
         "title": "제주형 스마트팜 웹서비스 구축 및 전국 서비스 확장 전략",
         "speaker": "변종기",
         "company": "맘꽃가든 대표",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/byeonjonggi.png",
         "alt_text": ""
       },
       {
@@ -52,10 +52,10 @@
         "type": "session",
         "time": "16:00 ~ 16:50",
         "location": "트랙룸",
-        "title": "미정",
+        "title": "NextJS 와 LangChainJS로 개발하는 LLM RAG Bot",
         "speaker": "강창훈",
         "company": "엠소프트웨어 대표",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/kangchanghoon.png",
         "alt_text": ""
       },
       {
