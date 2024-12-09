@@ -513,8 +513,7 @@ a {
   fill: #767676;
 }
 
-/* 
-.sticker-section {
+.modal-section {
   display: none;
   position: fixed;
   top: 0;
@@ -528,22 +527,17 @@ a {
   z-index: 999;
 }
 
-.sticker-section.active {
+.modal-section.active {
   display: flex;
 }
 
-.sticker-section .wrap {
+.modal-section .wrap {
   border-radius: 10px;
   overflow: hidden;
   margin: 0 50px;
 }
 
-.sticker-section .info-img {
-  max-width: 500px;
-  min-width: 200px;
-}
-
-.sticker-section .close-modal {
+/* .modal-section .close-modal {
   width: 100%;
   height: 50px;
   background-color: #fff;
