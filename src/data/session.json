@@ -9,7 +9,7 @@
         "title": "Conference 안내 및 등록, 오프닝",
         "speaker": "제주 웹 컨퍼런스",
         "company": "",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/default.png",
         "alt_text": ""
       },
       {
@@ -86,7 +86,7 @@
         "title": "Conference 안내 및 등록, 오프닝",
         "speaker": "제주 웹 컨퍼런스",
         "company": "",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/default.png",
         "alt_text": ""
       },
       {
@@ -122,7 +122,7 @@
         "title": "코딩 잘하는 개발자 vs. 일 잘하는 개발자",
         "speaker": "김태훈",
         "company": "넥슨코리아 프론트웹개발팀 팀장",
-        "profile_image": "/src/images/profile/default.svg",
+        "profile_image": "/src/images/profile/default.png",
         "alt_text": ""
       },
       {

@@ -194,6 +194,7 @@ a {
   gap: 0.5rem;
 
   &::before {
+    flex-shrink: 0;
     display: block;
     content: "";
     width: 0.3rem;
@@ -292,7 +293,7 @@ a {
 }
 
 .session-image {
-  margin: auto 0;
+  /* margin: auto 0; */
   width: 8rem;
   height: 8rem;
   border-radius: 2rem;
@@ -435,6 +436,7 @@ a {
   padding: 2rem;
   font-weight: 700;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .faq .question::before {
@@ -679,16 +681,30 @@ a {
   html {
     font-size: 8px;
   }
+
   .all {
-    width: 80%;
+    width: 90%;
   }
+
   .section {
-    padding: 20px;
+    padding: 3rem;
+  }
+
+  .intro {
+    padding: 4rem 3rem 3rem;
+  }
+
+  .conf-summary {
+    gap: 1.2rem 2rem;
+  }
+
+  .notice-list h3 {
+    width: 7.5rem;
   }
 
   .scroll-top {
-    bottom: 74px;
-    right: 15px;
+    bottom: 9rem;
+    right: 2rem;
   }
 
   .scroll-top svg {
@@ -710,8 +726,5 @@ a {
   .prize-list {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 1rem;
-  }
-  .section {
-    padding: 15px;
   }
 }
