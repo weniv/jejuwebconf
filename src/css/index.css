@@ -187,7 +187,11 @@ a {
   text-align: center;
 }
 
-/* notice-list: 모집 안내 */
+/* .section-note: 참가 신청 안내 */
+.section-note {
+  padding: 4rem 8rem 3.4rem;
+}
+
 .notice-list {
   display: flex;
   flex-direction: column;
@@ -694,6 +698,13 @@ a {
   }
 }
 
+@media (max-width: 1024px) {
+  .section.intro,
+  .section.section-note {
+    padding: 4rem;
+  }
+}
+
 @media (max-width: 769px) {
   html {
     font-size: 8px;
@@ -705,10 +716,10 @@ a {
 
   .section {
     padding: 3rem;
-  }
 
-  .intro {
-    padding: 4rem 3rem 3rem;
+    &.intro {
+      padding: 4rem 3rem 3rem;
+    }
   }
 
   .conf-summary {
@@ -746,7 +757,7 @@ a {
   }
 
   .note-wrap {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
   }
 }
