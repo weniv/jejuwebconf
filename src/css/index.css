@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "CookieRunOTF-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
-    format("woff");
+  font-family: 'CookieRunOTF-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,14 +21,21 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: NanumSquare, "Apple SD Gothic Neo", "Roboto", "Noto Sans KR",
-    NanumGothic, "Malgun Gothic", sans-serif;
+  font-family: NanumSquare, 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
   background-color: var(--bgColor);
   color: var(--fontMain);
 }
 
 img {
   image-rendering: -webkit-optimize-contrast;
+}
+
+a {
+  text-underline-position: under;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .sr-only {
@@ -64,11 +70,6 @@ img {
   transform: translateZ(0);
 }
 
-a {
-  color: var(--fontMain);
-  text-underline-position: under;
-}
-
 .section {
   margin-bottom: 4rem;
   padding: 4rem;
@@ -76,6 +77,25 @@ a {
   background: #fff;
   box-shadow: 0px 0.4rem 3rem rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
+}
+
+.link-decoration {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url('/src/images/icon/icon-arrow.svg') no-repeat center / cover;
+  }
+}
+
+.open-modal:hover {
+  text-underline-position: under;
+  text-decoration: underline;
 }
 
 /* 본 콘텐츠 */
@@ -125,7 +145,6 @@ a {
 
 .apply-link {
   display: block;
-  /* margin: 3rem 0; */
   padding: 1.4rem;
   font-weight: 700;
   font-size: 1.6rem;
@@ -196,7 +215,7 @@ a {
   &::before {
     flex-shrink: 0;
     display: block;
-    content: "";
+    content: '';
     width: 0.3rem;
     height: 0.3rem;
     background-color: var(--fontMain);
@@ -293,7 +312,6 @@ a {
 }
 
 .session-image {
-  /* margin: auto 0; */
   width: 8rem;
   height: 8rem;
   border-radius: 2rem;
@@ -327,7 +345,7 @@ a {
   gap: 0.5rem;
 
   &::before {
-    content: "|";
+    content: '|';
   }
 }
 
@@ -350,13 +368,12 @@ a {
 }
 
 .notice-message::before {
-  content: "";
+  content: '';
   display: block;
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 1rem;
-  background: #fff url(../images/icon/icon-notice.svg) no-repeat center / 2rem
-    2rem;
+  background: #fff url(../images/icon/icon-notice.svg) no-repeat center / 2rem 2rem;
   margin-right: 1.3rem;
 }
 
@@ -441,7 +458,7 @@ a {
 
 .faq .question::before {
   margin: 0 2rem 0 0.5rem;
-  content: "Q";
+  content: 'Q';
   width: 1rem;
   height: 1rem;
   color: var(--mainColor);
@@ -459,7 +476,7 @@ a {
 .faq .answer::before {
   display: block;
   margin: 0 2rem 0 0.5rem;
-  content: "A";
+  content: 'A';
   width: 1rem;
   height: 1rem;
   color: var(--fontLightGray);
@@ -551,12 +568,12 @@ a {
 
 .modal-contents::before,
 .modal-contents::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 18rem;
   height: 9rem;
-  background: url("/src/images/modal-light.png") no-repeat center / cover;
+  background: url('/src/images/modal-light.png') no-repeat center / cover;
   z-index: 10;
 }
 
@@ -725,6 +742,11 @@ a {
 
   .prize-list {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .note-wrap {
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }
